@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.container { max-width: 980px; margin: 0 auto; padding: 32px 20px; }
+header h1 { font-size: 24px; margin-bottom: 4px; }
+.subtitle { color: #8b949e; font-size: 13px; margin: 0 0 4px; }
+.last-updated { color: #8b949e; font-size: 12px; margin: 0 0 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; color: #8b949e; font-weight: 500; padding: 8px 10px; border-bottom: 1px solid #30363d; }
+td { padding: 10px; border-bottom: 1px solid #21262d; vertical-align: middle; }
+.symbol-cell { display: flex; flex-direction: column; }
+.symbol { font-weight: 600; }
+.address { color: #8b949e; font-size: 11px; }
+.score-bar-wrap { position: relative; background: #21262d; border-radius: 6px; height: 22px; width: 160px; overflow: hidden; }
+.score-bar { height: 100%; border-radius: 6px; }
+.score-label { position: absolute; top: 0; left: 8px; line-height: 22px; font-size: 12px; font-weight: 600; color: #0d1117; mix-blend-mode: screen; }
+.rec-yes { color: #2ecc71; font-weight: 700; }
+.rec-no { color: #8b949e; }
+.flag-none { color: #2ecc71; font-size: 12px; }
+.flag-badge { display: inline-block; background: #3b2323; color: #ff7b7b; font-size: 11px; padding: 2px 6px; border-radius: 4px; margin: 2px 4px 2px 0; }
+.row-capped { background: rgba(231, 76, 60, 0.06); }
+.ts-cell { color: #8b949e; font-size: 12px; }
+.empty { color: #8b949e; }
+footer { margin-top: 24px; color: #6e7681; font-size: 12px; }
