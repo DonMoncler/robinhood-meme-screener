@@ -3,7 +3,15 @@ One poll cycle: pull fresh data from DexScreener (price/liquidity/volume/
 buy-sell) + Blockscout (holders/verification) for every tracked token,
 write a snapshot, then recompute its score.
 
-DexScreener replaces Codex entirely -- free, no API key needed.
+v3 fixes:
+- symbol/name now pulled from the DexScreener pair's baseToken object
+  (the token-profiles endpoint doesn't include a symbol, which is why
+  the dashboard was showing "?" for every token).
+- top10 concentration now divides by the token's actual total supply
+  (from Blockscout token info), not by the sum of only the top 100
+  fetched holders -- the old version overstated concentration for any
+  token with more than ~100 holders, which is why almost everything was
+  getting flagged as "high top10 concentration."
 """
 import time
 import blockscout_client as bs
@@ -30,21 +38,29 @@ def discover_new_tokens():
     return new_addrs
 
 
-def compute_top10_pct(address):
+def compute_top10_pct(address, best_pair):
     """
-    Top-10 wallet concentration, computed from Blockscout's holder list
-    (Codex used to provide this directly; Blockscout gives us the raw
-    holder balances so we compute the percentage ourselves).
+    Top-10 wallet concentration = sum of top 10 holder balances / actual
+    total supply (pulled from Blockscout token info) -- NOT divided by
+    the sum of only the fetched holder page, which overstates
+    concentration for any token with more holders than the page size.
     """
     try:
-        data = bs.get_token_holders(address, limit=100)
-        items = data.get("items", []) if isinstance(data, dict) else data
-        balances = [float(h.get("value", 0)) for h in items]
-        total = sum(balances)
-        if total <= 0:
+        holders_data = bs.get_token_holders(address, limit=10)
+        items = holders_data.get("items", []) if isinstance(holders_data, dict) else holders_data
+        top10_balance = sum(float(h.get("value", 0)) for h in items[:10])
+
+        info = bs.get_token_info(address)
+        decimals = int(info.get("decimals") or 18)
+        total_supply_raw = info.get("total_supply")
+        if total_supply_raw is None:
             return None
-        top10 = sum(sorted(balances, reverse=True)[:10])
-        return top10 / total
+        total_supply = float(total_supply_raw) / (10 ** decimals)
+        top10_balance_adj = top10_balance / (10 ** decimals)
+
+        if total_supply <= 0:
+            return None
+        return min(top10_balance_adj / total_supply, 1.0)
     except Exception as e:
         print(f"[{address}] top10 concentration calc failed: {e}")
         return None
@@ -71,23 +87,30 @@ def poll_token(token_row):
     price_usd = liquidity_usd = None
     vol1 = vol6 = vol24 = None
     buys1 = sells1 = None
+    best_pair = None
 
     try:
-        pair = ds.get_best_pair(address)
-        if pair:
-            price_usd = float(pair.get("priceUsd") or 0) or None
-            liquidity_usd = (pair.get("liquidity") or {}).get("usd")
-            volume = pair.get("volume") or {}
+        best_pair = ds.get_best_pair(address)
+        if best_pair:
+            price_usd = float(best_pair.get("priceUsd") or 0) or None
+            liquidity_usd = (best_pair.get("liquidity") or {}).get("usd")
+            volume = best_pair.get("volume") or {}
             vol1 = volume.get("h1")
             vol6 = volume.get("h6")
             vol24 = volume.get("h24")
-            txns_h1 = (pair.get("txns") or {}).get("h1") or {}
+            txns_h1 = (best_pair.get("txns") or {}).get("h1") or {}
             buys1 = txns_h1.get("buys")
             sells1 = txns_h1.get("sells")
+
+            base_token = best_pair.get("baseToken") or {}
+            symbol = base_token.get("symbol")
+            name = base_token.get("name")
+            if symbol or name:
+                upsert_token(address, symbol=symbol, name=name)
     except Exception as e:
         print(f"[{address}] dexscreener pair fetch failed: {e}")
 
-    top10_pct = compute_top10_pct(address)
+    top10_pct = compute_top10_pct(address, best_pair)
 
     insert_snapshot(
         address,
