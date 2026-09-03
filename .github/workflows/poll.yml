@@ -24,7 +24,6 @@ jobs:
       - name: Run poll cycle and export snapshot
         env:
           BLOCKSCOUT_API_KEY: ${{ secrets.BLOCKSCOUT_API_KEY }}
-          CODEX_API_KEY: ${{ secrets.CODEX_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
         run: python export_snapshot.py

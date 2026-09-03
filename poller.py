@@ -1,31 +1,53 @@
 """
-One poll cycle: pull fresh data from Blockscout + Codex for every tracked
-token, write a snapshot, then recompute its score.
+One poll cycle: pull fresh data from DexScreener (price/liquidity/volume/
+buy-sell) + Blockscout (holders/verification) for every tracked token,
+write a snapshot, then recompute its score.
+
+DexScreener replaces Codex entirely -- free, no API key needed.
 """
 import time
 import blockscout_client as bs
-import codex_client as cx
+import dexscreener_client as ds
 import scoring
 from storage import upsert_token, insert_snapshot, insert_score, all_tracked_tokens
 
 
 def discover_new_tokens():
+    """DexScreener's latest token profiles, filtered to Robinhood Chain."""
     try:
-        trending = cx.get_trending_tokens(limit=25)
+        profiles = ds.get_latest_token_profiles()
     except Exception as e:
-        print(f"[discover] Codex trending fetch failed: {e}")
+        print(f"[discover] DexScreener profiles fetch failed: {e}")
         return []
 
     new_addrs = []
-    for item in trending:
-        addr = item["token"]["address"]
-        upsert_token(
-            addr,
-            symbol=item["token"].get("symbol"),
-            name=item["token"].get("name"),
-        )
+    for p in profiles:
+        addr = p.get("tokenAddress")
+        if not addr:
+            continue
+        upsert_token(addr)
         new_addrs.append(addr)
     return new_addrs
+
+
+def compute_top10_pct(address):
+    """
+    Top-10 wallet concentration, computed from Blockscout's holder list
+    (Codex used to provide this directly; Blockscout gives us the raw
+    holder balances so we compute the percentage ourselves).
+    """
+    try:
+        data = bs.get_token_holders(address, limit=100)
+        items = data.get("items", []) if isinstance(data, dict) else data
+        balances = [float(h.get("value", 0)) for h in items]
+        total = sum(balances)
+        if total <= 0:
+            return None
+        top10 = sum(sorted(balances, reverse=True)[:10])
+        return top10 / total
+    except Exception as e:
+        print(f"[{address}] top10 concentration calc failed: {e}")
+        return None
 
 
 def poll_token(token_row):
@@ -49,26 +71,23 @@ def poll_token(token_row):
     price_usd = liquidity_usd = None
     vol1 = vol6 = vol24 = None
     buys1 = sells1 = None
-    top10_pct = None
-    try:
-        price_data = cx.get_token_price(address)
-        price_usd = price_data.get("priceUsd")
-    except Exception as e:
-        print(f"[{address}] codex price failed: {e}")
 
     try:
-        top10_pct = cx.get_top10_holder_pct(address)
+        pair = ds.get_best_pair(address)
+        if pair:
+            price_usd = float(pair.get("priceUsd") or 0) or None
+            liquidity_usd = (pair.get("liquidity") or {}).get("usd")
+            volume = pair.get("volume") or {}
+            vol1 = volume.get("h1")
+            vol6 = volume.get("h6")
+            vol24 = volume.get("h24")
+            txns_h1 = (pair.get("txns") or {}).get("h1") or {}
+            buys1 = txns_h1.get("buys")
+            sells1 = txns_h1.get("sells")
     except Exception as e:
-        print(f"[{address}] codex top10 failed: {e}")
+        print(f"[{address}] dexscreener pair fetch failed: {e}")
 
-    try:
-        events = cx.get_token_events(address, limit=200)
-        cutoff = time.time() - 3600
-        recent = [e for e in events if e.get("timestamp", 0) >= cutoff]
-        buys1 = sum(1 for e in recent if e.get("type") == "buy")
-        sells1 = sum(1 for e in recent if e.get("type") == "sell")
-    except Exception as e:
-        print(f"[{address}] codex events failed: {e}")
+    top10_pct = compute_top10_pct(address)
 
     insert_snapshot(
         address,
