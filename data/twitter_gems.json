@@ -1,18 +1,5 @@
 {
-  "last_updated": 1788457128,
+  "last_updated": 1788466962,
   "market_cap_ceiling": 500000,
-  "coins": [
-    {
-      "symbol": "DEBT",
-      "address": "0x43f9B165BeE712c0551727Db5F7020358aD81e18",
-      "market_cap_usd": 21793,
-      "price_usd": "0.00002179",
-      "liquidity_usd": 21867.72,
-      "volume_24h_usd": 982.74,
-      "twitter_mentions": 1,
-      "twitter_distinct_authors": 1,
-      "twitter_engagement": 0,
-      "dexscreener_url": "https://dexscreener.com/robinhood/0x690dbeece309a951db0319c530744f203745ad125921e3d30269b92df26e7e2a"
-    }
-  ]
+  "coins": []
 }
