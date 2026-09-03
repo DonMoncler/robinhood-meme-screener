@@ -361,23 +361,6 @@ tr.row-clickable:hover td { background: rgba(111,233,255,0.05); }
 }
 .dash-panel-foot-value { color: var(--cyan); font-family: 'JetBrains Mono', monospace; }
 
-.pending-panel .pending-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 10px;
-  color: var(--ink-dim);
-}
-.pending-icon {
-  font-size: 26px;
-  color: var(--cyan-dim);
-  letter-spacing: 4px;
-}
-.pending-body p { font-size: 11.5px; line-height: 1.5; max-width: 220px; margin: 0; }
-
 .gauge-wrap { display: flex; flex-direction: column; align-items: center; margin-bottom: 10px; }
 .gauge-label { font-size: 10px; letter-spacing: 1.5px; color: var(--ink-dim); text-transform: uppercase; margin-bottom: 4px; }
 .gauge { position: relative; display: flex; align-items: flex-end; justify-content: center; }
@@ -407,3 +390,38 @@ tr.row-clickable:hover td { background: rgba(111,233,255,0.05); }
   .dash-grid { grid-template-columns: 1fr; }
   .dash-core { position: static; transform: none; margin: 8px 0 4px; display: flex; justify-content: center; }
 }
+
+.badge-tag {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--cyan);
+  border: 1px solid var(--glass-border-strong);
+  border-radius: 20px;
+  padding: 2px 9px;
+  text-transform: uppercase;
+}
+
+.liq-stats { display: flex; justify-content: space-between; margin-bottom: 14px; }
+.liq-stat { display: flex; flex-direction: column; gap: 4px; }
+.liq-value { font-size: 22px; font-weight: 700; font-family: 'JetBrains Mono', monospace; color: var(--ink); text-shadow: 0 0 14px rgba(111,233,255,0.2); }
+.liq-label { font-size: 10px; letter-spacing: 1px; color: var(--ink-dim); text-transform: uppercase; }
+.liq-chart { position: relative; flex: 1; display: flex; flex-direction: column; justify-content: flex-end; }
+.liq-chart-note { font-size: 10px; color: var(--cyan-dim); text-align: center; margin-top: 6px; letter-spacing: 0.3px; }
+
+.wallet-cols {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5px;
+  letter-spacing: 0.8px;
+  color: var(--cyan-dim);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.wallet-rows { display: flex; flex-direction: column; gap: 7px; flex: 1; }
+.wallet-row { display: flex; justify-content: space-between; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--ink-dim); }
+.wallet-icon { color: var(--cyan-dim); margin-right: 6px; font-size: 8px; }
+.wallet-addr { display: flex; align-items: center; }
+.wallet-pct { color: var(--ink-dim); }
+
+.risk-yes { color: #ff9aa4; font-weight: 600; }
+.risk-no { color: var(--cyan); font-weight: 600; }

@@ -100,49 +100,97 @@ function FeedPanel({ tokens }) {
         {feed.length === 0 && <div className="feed-empty">No tokens yet</div>}
       </div>
       <div className="dash-panel-foot">
-        <span>TOTAL TRACKED</span>
+        <span>TOTAL TODAY</span>
         <span className="dash-panel-foot-value">{tokens.length}</span>
       </div>
     </div>
   );
 }
 
-function PendingPanel({ title, note }) {
+function LiquidityPanel() {
   return (
-    <div className="dash-panel pending-panel">
+    <div className="dash-panel liq-panel">
       <div className="dash-panel-head">
-        <span className="dash-panel-title">{title}</span>
+        <span className="dash-panel-title">Liquidity / Volume</span>
+        <span className="badge-tag">24H</span>
       </div>
-      <div className="pending-body">
-        <span className="pending-icon">&#8943;</span>
-        <p>{note}</p>
+      <div className="liq-stats">
+        <div className="liq-stat">
+          <span className="liq-value">--</span>
+          <span className="liq-label">Total Liquidity</span>
+        </div>
+        <div className="liq-stat">
+          <span className="liq-value">--</span>
+          <span className="liq-label">24h Volume</span>
+        </div>
+      </div>
+      <div className="liq-chart">
+        <svg viewBox="0 0 300 70" width="100%" height="70" preserveAspectRatio="none">
+          <line x1="0" y1="60" x2="300" y2="60" stroke="rgba(111,233,255,0.12)" strokeWidth="1" />
+          <line x1="0" y1="35" x2="300" y2="35" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
+          <line x1="0" y1="10" x2="300" y2="10" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
+        </svg>
+        <span className="liq-chart-note">Historical feed not wired yet</span>
       </div>
     </div>
   );
 }
 
-function RiskPanel({ tokens }) {
-  const total = tokens.length;
-  const cleanCount = tokens.filter((t) => !t.flags).length;
-  const cappedCount = tokens.filter((t) => (t.flags ? t.flags.split(",").filter(Boolean).length : 0) >= 2).length;
-  const avgScore = total ? Math.round(tokens.reduce((s, t) => s + t.final_score, 0) / total) : 0;
-  const riskPct = total ? Math.round((cappedCount / total) * 100) : 0;
-  const riskLabel = riskPct >= 50 ? "HIGH RISK" : riskPct >= 20 ? "ELEVATED" : "LOW RISK";
-  const flagCounts = {};
-  tokens.forEach((t) => {
-    (t.flags ? t.flags.split(",").filter(Boolean) : []).forEach((f) => {
-      flagCounts[f] = (flagCounts[f] || 0) + 1;
-    });
-  });
-  const topFlags = Object.entries(flagCounts).sort((a, b) => b[1] - a[1]).slice(0, 4);
+function WalletPanel() {
+  const rows = new Array(6).fill(null);
+  return (
+    <div className="dash-panel wallet-panel">
+      <div className="dash-panel-head">
+        <span className="dash-panel-title">Wallet Tracking</span>
+        <span className="badge-tag">TOP HOLDERS</span>
+      </div>
+      <div className="wallet-cols">
+        <span>WALLET</span>
+        <span>HOLDING %</span>
+      </div>
+      <div className="wallet-rows">
+        {rows.map((_, i) => (
+          <div className="wallet-row" key={i}>
+            <span className="wallet-addr"><span className="wallet-icon">&#9679;</span>0x----...----</span>
+            <span className="wallet-pct">--%</span>
+          </div>
+        ))}
+      </div>
+      <div className="dash-panel-foot">
+        <span>PER-WALLET DATA</span>
+        <span className="dash-panel-foot-value">pending</span>
+      </div>
+    </div>
+  );
+}
+
+function RiskPanel({ token }) {
+  if (!token) {
+    return (
+      <div className="dash-panel risk-panel">
+        <div className="dash-panel-head"><span className="dash-panel-title">Risk Analysis</span></div>
+        <div className="pending-body"><p>No token selected yet.</p></div>
+      </div>
+    );
+  }
+  const flags = token.flags ? token.flags.split(",").filter(Boolean) : [];
+  const riskPct = Math.max(0, Math.min(100, Math.round(100 - (token.final_score / 90) * 100)));
+  const riskLabel = riskPct >= 60 ? "HIGH RISK" : riskPct >= 30 ? "ELEVATED" : "LOW RISK";
+  const checks = [
+    ["one_sided_buying", "One-Sided Buying"],
+    ["social_spike_no_holders", "Social Spike / No Holders"],
+    ["extreme_volume_ratio", "Extreme Volume Ratio"],
+    ["high_concentration", "High Concentration"],
+  ];
 
   return (
     <div className="dash-panel risk-panel">
       <div className="dash-panel-head">
         <span className="dash-panel-title">Risk Analysis</span>
+        <span className="badge-tag">{token.symbol || "?"}</span>
       </div>
       <div className="gauge-wrap">
-        <span className="gauge-label">FLEET RISK SCORE</span>
+        <span className="gauge-label">RISK SCORE</span>
         <div className="gauge">
           <svg viewBox="0 0 120 66" width="150" height="82">
             <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="rgba(111,233,255,0.12)" strokeWidth="9" />
@@ -160,13 +208,13 @@ function RiskPanel({ tokens }) {
         <span className="gauge-tag">{riskLabel}</span>
       </div>
       <div className="risk-rows">
-        <div className="risk-row"><span>Avg Score</span><span>{avgScore}/90</span></div>
-        <div className="risk-row"><span>Clean Tokens</span><span>{cleanCount}/{total}</span></div>
-        <div className="risk-row"><span>Capped (2+ flags)</span><span>{cappedCount}/{total}</span></div>
-        {topFlags.map(([f, c]) => (
-          <div className="risk-row" key={f}><span>{f.replaceAll("_", " ")}</span><span>{c}</span></div>
+        {checks.map(([key, label]) => (
+          <div className="risk-row" key={key}>
+            <span>{label}</span>
+            <span className={flags.includes(key) ? "risk-yes" : "risk-no"}>{flags.includes(key) ? "YES" : "NO"}</span>
+          </div>
         ))}
-        {topFlags.length === 0 && <div className="risk-row"><span>No active flags</span><span>--</span></div>}
+        <div className="risk-row"><span>Score</span><span>{token.final_score}/90</span></div>
       </div>
     </div>
   );
@@ -225,6 +273,8 @@ export default function Home() {
     return (data.tokens || []).slice().sort((a, b) => b.ts - a.ts);
   }, [data.tokens]);
 
+  const topToken = tokens.length ? tokens[0] : null;
+
   const recommendedCount = tokens.filter((t) => t.recommended).length;
   const topScore = tokens.length ? Math.max(...tokens.map((t) => t.final_score)) : 0;
   const cleanCount = tokens.filter((t) => !t.flags).length;
@@ -248,15 +298,9 @@ export default function Home() {
         {!loading && (
           <div className="dash-grid">
             <FeedPanel tokens={feedOrdered} />
-            <PendingPanel
-              title="Liquidity / Volume"
-              note="Historical liquidity and volume charting needs raw time-series data added to the backend -- not yet wired."
-            />
-            <PendingPanel
-              title="Wallet Tracking"
-              note="Per-wallet holder addresses aren't exposed by the API yet -- only aggregate concentration is used internally for scoring."
-            />
-            <RiskPanel tokens={tokens} />
+            <LiquidityPanel />
+            <WalletPanel />
+            <RiskPanel token={topToken} />
             <div className="dash-core">
               <HoloCore label="Live Token Activity" value={tokens.length} />
             </div>
