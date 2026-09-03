@@ -73,7 +73,7 @@ function TokenRow({ t }) {
 }
 
 function FeedPanel({ tokens }) {
-  const feed = tokens.slice(0, 9);
+  const feed = tokens.slice(0, 6);
   return (
     <div className="dash-panel feed-panel">
       <div className="dash-panel-head">
@@ -83,7 +83,7 @@ function FeedPanel({ tokens }) {
       <div className="feed-cols">
         <span>TIME</span>
         <span>TOKEN</span>
-        <span>CONTRACT ADDRESS</span>
+        <span>ADDRESS</span>
       </div>
       <div className="feed-rows">
         {feed.map((t) => (
@@ -125,10 +125,10 @@ function LiquidityPanel() {
         </div>
       </div>
       <div className="liq-chart">
-        <svg viewBox="0 0 300 70" width="100%" height="70" preserveAspectRatio="none">
-          <line x1="0" y1="60" x2="300" y2="60" stroke="rgba(111,233,255,0.12)" strokeWidth="1" />
-          <line x1="0" y1="35" x2="300" y2="35" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
-          <line x1="0" y1="10" x2="300" y2="10" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
+        <svg viewBox="0 0 300 50" preserveAspectRatio="none">
+          <line x1="0" y1="42" x2="300" y2="42" stroke="rgba(111,233,255,0.12)" strokeWidth="1" />
+          <line x1="0" y1="24" x2="300" y2="24" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
+          <line x1="0" y1="6" x2="300" y2="6" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
         </svg>
         <span className="liq-chart-note">Historical feed not wired yet</span>
       </div>
@@ -137,7 +137,7 @@ function LiquidityPanel() {
 }
 
 function WalletPanel() {
-  const rows = new Array(6).fill(null);
+  const rows = new Array(5).fill(null);
   return (
     <div className="dash-panel wallet-panel">
       <div className="dash-panel-head">
@@ -169,7 +169,7 @@ function RiskPanel({ token }) {
     return (
       <div className="dash-panel risk-panel">
         <div className="dash-panel-head"><span className="dash-panel-title">Risk Analysis</span></div>
-        <div className="pending-body"><p>No token selected yet.</p></div>
+        <div className="feed-empty">No token selected yet.</div>
       </div>
     );
   }
@@ -178,8 +178,8 @@ function RiskPanel({ token }) {
   const riskLabel = riskPct >= 60 ? "HIGH RISK" : riskPct >= 30 ? "ELEVATED" : "LOW RISK";
   const checks = [
     ["one_sided_buying", "One-Sided Buying"],
-    ["social_spike_no_holders", "Social Spike / No Holders"],
-    ["extreme_volume_ratio", "Extreme Volume Ratio"],
+    ["social_spike_no_holders", "Social Spike"],
+    ["extreme_volume_ratio", "Volume Ratio"],
     ["high_concentration", "High Concentration"],
   ];
 
@@ -192,7 +192,7 @@ function RiskPanel({ token }) {
       <div className="gauge-wrap">
         <span className="gauge-label">RISK SCORE</span>
         <div className="gauge">
-          <svg viewBox="0 0 120 66" width="150" height="82">
+          <svg viewBox="0 0 120 66">
             <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="rgba(111,233,255,0.12)" strokeWidth="9" />
             <path
               d="M10,60 A50,50 0 0,1 110,60"
@@ -214,7 +214,6 @@ function RiskPanel({ token }) {
             <span className={flags.includes(key) ? "risk-yes" : "risk-no"}>{flags.includes(key) ? "YES" : "NO"}</span>
           </div>
         ))}
-        <div className="risk-row"><span>Score</span><span>{token.final_score}/90</span></div>
       </div>
     </div>
   );
