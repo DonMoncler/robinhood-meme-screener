@@ -4,7 +4,14 @@ finds cashtags being talked about on X, cross-references each against
 DexScreener for market cap + liquidity, filters to market cap < $500k,
 and ranks the survivors by Twitter buzz.
 
-v2 fixes:
+v3 update: broadened SEARCH_TERMS beyond the literal "Robinhood Chain"
+phrase -- most people talking about a specific meme coin just name the
+coin/cashtag, not the chain, so the narrower v2 search was missing most
+real chatter. Two batched queries now cover chain-name mentions AND
+meme/gem-style language, still kept to 2 queries total to control
+Apify cost.
+
+v2 fixes (still in effect):
 - Ignore major-asset cashtags ($BTC, $ETH, $USDT, etc.) -- these are not
   obscure Robinhood Chain meme coins, they're noise from generic crypto
   tweets, and searching DexScreener for them returns garbage.
@@ -12,8 +19,7 @@ v2 fixes:
   (>15 chars) -- this is a known impersonation-token scam pattern: a
   token names itself with dozens of major ticker symbols crammed
   together (e.g. "BTCETHUSDTBNB...") so it surfaces in searches for
-  ANY of those tickers. One such token showed up as the top "BTC"
-  result and broke the dashboard layout before this filter existed.
+  ANY of those tickers.
 """
 import json
 import re
@@ -29,8 +35,6 @@ MAX_SYMBOL_LEN = 15
 
 CASHTAG_RE = re.compile(r"\$([A-Za-z][A-Za-z0-9]{1,9})\b")
 
-# Major/established assets to ignore -- we only care about obscure
-# Robinhood Chain meme coins, not noise from generic crypto chatter.
 MAJOR_ASSET_BLOCKLIST = {
     "BTC", "ETH", "USDT", "USDC", "BNB", "XRP", "SOL", "TRX", "DOGE",
     "ADA", "LINK", "AVAX", "SHIB", "DOT", "MATIC", "LTC", "BCH", "XLM",
@@ -38,7 +42,8 @@ MAJOR_ASSET_BLOCKLIST = {
 }
 
 SEARCH_TERMS = [
-    '("Robinhood Chain" OR "RobinhoodChain" OR "#RobinhoodChain") (meme OR coin OR token) lang:en',
+    '("Robinhood Chain" OR "RobinhoodChain" OR "RH chain" OR "#RHChain" OR "chain 4663") lang:en',
+    '(cashcat OR "robinhood chain gem" OR "robinhood chain meme" OR "robinhood meme coin") lang:en',
 ]
 
 
@@ -73,7 +78,6 @@ def extract_cashtag_stats(tweets):
 
 
 def is_plausible_token(symbol, name):
-    """Reject impersonation/decoy tokens with implausibly long symbol/name strings."""
     if symbol and len(symbol) > MAX_SYMBOL_LEN:
         return False
     if name and len(name) > 40:
@@ -131,7 +135,7 @@ def buzz_score(item):
 
 if __name__ == "__main__":
     try:
-        tweets = apify.search_tweets(SEARCH_TERMS, max_items=150)
+        tweets = apify.search_tweets(SEARCH_TERMS, max_items=200)
     except Exception as e:
         print(f"Apify search failed: {e}")
         tweets = []
