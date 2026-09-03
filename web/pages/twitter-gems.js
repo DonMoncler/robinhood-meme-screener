@@ -16,8 +16,14 @@ function buzzPct(c, maxMentions) {
 
 function GemCard({ c, maxMentions }) {
   const pct = buzzPct(c, maxMentions);
+  const url = c.dexscreener_url || (c.address ? `https://dexscreener.com/robinhood/${c.address}` : null);
+
+  function openChart() {
+    if (url) window.open(url, "_blank", "noopener,noreferrer");
+  }
+
   return (
-    <div className="gem-card">
+    <div className={url ? "gem-card gem-clickable" : "gem-card"} onClick={openChart} title={url ? "Open chart on DexScreener" : undefined}>
       <div className="gem-header">
         <div>
           <div className="gem-symbol">{c.symbol}</div>
@@ -25,11 +31,7 @@ function GemCard({ c, maxMentions }) {
             <div className="gem-address">{c.address.slice(0, 6)}...{c.address.slice(-4)}</div>
           )}
         </div>
-        {c.dexscreener_url && (
-          <a href={c.dexscreener_url} target="_blank" rel="noreferrer" className="chart-link">
-            Chart &#8599;
-          </a>
-        )}
+        {url && <span className="chart-link">Chart &#8599;</span>}
       </div>
 
       <div className="gem-stats">
@@ -92,7 +94,7 @@ export default function TwitterGems() {
         <header>
           <h1>Twitter Gems</h1>
           <p className="subtitle">
-            Under ${(data.market_cap_ceiling || 500000).toLocaleString()} market cap, ranked by X buzz. Personal research tool -- not financial advice.
+            Under ${(data.market_cap_ceiling || 500000).toLocaleString()} market cap, ranked by X buzz. Click a card to open its chart.
           </p>
           {data.last_updated && (
             <p className="last-updated">

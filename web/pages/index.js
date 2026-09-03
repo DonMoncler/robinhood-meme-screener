@@ -30,8 +30,18 @@ function SortArrow({ active, dir }) {
 function TokenRow({ t }) {
   const flags = t.flags ? t.flags.split(",").filter(Boolean) : [];
   const capped = flags.length >= 2;
+  const chartUrl = `https://dexscreener.com/robinhood/${t.address}`;
+
+  function openChart() {
+    window.open(chartUrl, "_blank", "noopener,noreferrer");
+  }
+
   return (
-    <tr className={capped ? "row-capped" : ""}>
+    <tr
+      className={capped ? "row-capped row-clickable" : "row-clickable"}
+      onClick={openChart}
+      title="Open chart on DexScreener"
+    >
       <td className="symbol-cell">
         <span className="symbol">{t.symbol || "?"}</span>
         <span className="address">{t.address.slice(0, 6)}...{t.address.slice(-4)}</span>
@@ -54,6 +64,9 @@ function TokenRow({ t }) {
         )}
       </td>
       <td className="ts-cell">{new Date(t.ts * 1000).toLocaleTimeString()}</td>
+      <td className="row-link-cell">
+        <span className="row-link">Chart &#8599;</span>
+      </td>
     </tr>
   );
 }
@@ -118,7 +131,7 @@ export default function Home() {
         <header>
           <h1>Robinhood Chain Meme Screener</h1>
           <p className="subtitle">
-            Personal research tool -- not financial advice. Chain ID 4663.
+            Personal research tool -- not financial advice. Chain ID 4663. Click any row to open its chart.
           </p>
           {data.last_updated && (
             <p className="last-updated">
@@ -160,6 +173,7 @@ export default function Home() {
                   <th onClick={() => toggleSort("ts")} className="sortable">
                     Updated <SortArrow active={sortKey === "ts"} dir={sortDir} />
                   </th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -172,7 +186,7 @@ export default function Home() {
         )}
 
         <footer>
-          <p>2+ manipulation flags cap a token's score at 40/90 and exclude it from "recommended." Click column headers to sort.</p>
+          <p>2+ manipulation flags cap a token's score at 40/90 and exclude it from "recommended." Click column headers to sort, click a row to open its chart.</p>
         </footer>
       </div>
     </div>

@@ -154,6 +154,13 @@ footer { margin-top: 28px; color: #566573; font-size: 12px; text-align: center; 
 .buzz-bar { height: 100%; background: linear-gradient(90deg, #58a6ff, #3fe08a); border-radius: 6px; }
 .buzz-labels { display: flex; justify-content: space-between; color: #8b949e; font-size: 11px; }
 
+.row-clickable { cursor: pointer; }
+.row-link-cell { text-align: right; padding-right: 20px; }
+.row-link { color: #58a6ff; font-size: 12px; font-weight: 500; opacity: 0.7; }
+tr.row-clickable:hover .row-link { opacity: 1; text-decoration: underline; }
+tr.row-clickable:hover td { background: rgba(88,166,255,0.04); }
+.gem-clickable { cursor: pointer; }
+
 @media (max-width: 700px) {
   .stat-row { grid-template-columns: repeat(2, 1fr); }
   .topnav { padding: 14px 18px; }
