@@ -1,4 +1,141 @@
 {
-  "last_updated": null,
-  "tokens": []
+  "last_updated": 1788452401,
+  "tokens": [
+    {
+      "symbol": null,
+      "address": "0x500c6376ca9c78cdf8511bbd17bcc185df708185",
+      "final_score": 31.93,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788452366
+    },
+    {
+      "symbol": null,
+      "address": "0xdd125e0922d31657ea48f0bdaf989c58d7f1f0af",
+      "final_score": 31.41,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788452390
+    },
+    {
+      "symbol": null,
+      "address": "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b",
+      "final_score": 31.03,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788452401
+    },
+    {
+      "symbol": null,
+      "address": "0x027a7c97d456765bcdd4ab011a36de4e7933eb01",
+      "final_score": 30.93,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788452393
+    },
+    {
+      "symbol": null,
+      "address": "0x15B4bA895FEed50F3192F145A5C84172F2F7dE17",
+      "final_score": 30.64,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788452361
+    },
+    {
+      "symbol": null,
+      "address": "0x07415245cEb76D25BC96C403cAD2Cf2A5bba2EA4",
+      "final_score": 30.61,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788452371
+    },
+    {
+      "symbol": null,
+      "address": "0x25976d9754b95bff235443a5f3e20ad7a728e7a2",
+      "final_score": 30.44,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452357
+    },
+    {
+      "symbol": null,
+      "address": "0x32aC8C1D7672667D5EbdEa22935F7B06fC8D496f",
+      "final_score": 28.1,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788452382
+    },
+    {
+      "symbol": null,
+      "address": "0xb0dbb6bdeaaa3c4a7cbe8ffb5074f8a44819a349",
+      "final_score": 24.03,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788452385
+    },
+    {
+      "symbol": null,
+      "address": "0x003ABF07523eBCdE55B310F35C4516564fDc8AeF",
+      "final_score": 22.73,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452374
+    },
+    {
+      "symbol": null,
+      "address": "0xB51d57cBE67152fD163F59D1e0F950C6b647fB07",
+      "final_score": 22.43,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788452396
+    },
+    {
+      "symbol": null,
+      "address": "0x9f637f4eE9079602011b6641E07a30711856B2ea",
+      "final_score": 20.7,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788452387
+    },
+    {
+      "symbol": null,
+      "address": "0x3230dafDEd80807B941e89bE40B327e858fea0C7",
+      "final_score": 19.04,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452368
+    },
+    {
+      "symbol": null,
+      "address": "0x45ad9acb52e3dc1876a73028d29ea92ebfd8759a",
+      "final_score": 9.67,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452363
+    },
+    {
+      "symbol": null,
+      "address": "0xc76ee2ecc149b3416036ecd5fd4df6ad6a60717e",
+      "final_score": 8.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452379
+    },
+    {
+      "symbol": null,
+      "address": "0x75d5f1d18fe16f27dcdbe76bb5bfaeafe3456279",
+      "final_score": 8.38,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452399
+    },
+    {
+      "symbol": null,
+      "address": "0xb84ec4921924048c04077e9cb011d9c4d55c2a70",
+      "final_score": 8.37,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788452377
+    }
+  ]
 }
