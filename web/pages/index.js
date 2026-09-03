@@ -73,7 +73,7 @@ function TokenRow({ t }) {
 }
 
 function FeedPanel({ tokens }) {
-  const feed = tokens.slice(0, 6);
+  const feed = tokens.slice(0, 7);
   return (
     <div className="dash-panel feed-panel">
       <div className="dash-panel-head">
@@ -107,37 +107,48 @@ function FeedPanel({ tokens }) {
   );
 }
 
-function LiquidityPanel() {
+function RecommendedPanel({ tokens }) {
+  const ranked = tokens
+    .slice()
+    .sort((a, b) => b.final_score - a.final_score)
+    .slice(0, 7);
+  const maxScore = ranked.length ? ranked[0].final_score : 90;
+
   return (
     <div className="dash-panel liq-panel">
       <div className="dash-panel-head">
-        <span className="dash-panel-title">Liquidity / Volume</span>
-        <span className="badge-tag">24H</span>
+        <span className="dash-panel-title">Top Recommended Coins</span>
+        <span className="badge-tag">ROBINHOOD CHAIN</span>
       </div>
-      <div className="liq-stats">
-        <div className="liq-stat">
-          <span className="liq-value">--</span>
-          <span className="liq-label">Total Liquidity</span>
-        </div>
-        <div className="liq-stat">
-          <span className="liq-value">--</span>
-          <span className="liq-label">24h Volume</span>
-        </div>
+      <div className="rec-list">
+        {ranked.map((t) => (
+          <div
+            key={t.address}
+            className="rec-row"
+            onClick={() => window.open(`https://dexscreener.com/robinhood/${t.address}`, "_blank", "noopener,noreferrer")}
+          >
+            <span className="rec-row-symbol">{t.symbol || "?"}</span>
+            <div className="rec-row-bar-wrap">
+              <div
+                className="rec-row-bar"
+                style={{ width: `${(t.final_score / 90) * 100}%`, background: scoreColor(t.final_score) }}
+              />
+            </div>
+            <span className="rec-row-score">{t.final_score}</span>
+          </div>
+        ))}
+        {ranked.length === 0 && <div className="feed-empty">No tokens yet</div>}
       </div>
-      <div className="liq-chart">
-        <svg viewBox="0 0 300 50" preserveAspectRatio="none">
-          <line x1="0" y1="42" x2="300" y2="42" stroke="rgba(111,233,255,0.12)" strokeWidth="1" />
-          <line x1="0" y1="24" x2="300" y2="24" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
-          <line x1="0" y1="6" x2="300" y2="6" stroke="rgba(111,233,255,0.08)" strokeWidth="1" />
-        </svg>
-        <span className="liq-chart-note">Historical feed not wired yet</span>
+      <div className="dash-panel-foot">
+        <span>TOP SCORE</span>
+        <span className="dash-panel-foot-value">{maxScore}/90</span>
       </div>
     </div>
   );
 }
 
 function WalletPanel() {
-  const rows = new Array(5).fill(null);
+  const rows = new Array(6).fill(null);
   return (
     <div className="dash-panel wallet-panel">
       <div className="dash-panel-head">
@@ -293,19 +304,23 @@ export default function Home() {
             </p>
           )}
         </header>
+      </div>
 
-        {!loading && (
+      {!loading && (
+        <div className="dash-wrap">
           <div className="dash-grid">
             <FeedPanel tokens={feedOrdered} />
-            <LiquidityPanel />
+            <RecommendedPanel tokens={tokens} />
             <WalletPanel />
             <RiskPanel token={topToken} />
             <div className="dash-core">
               <HoloCore label="Live Token Activity" value={tokens.length} />
             </div>
           </div>
-        )}
+        </div>
+      )}
 
+      <div className="container">
         {!loading && tokens.length > 0 && (
           <div className="stat-row">
             <StatCard label="Tokens tracked" value={tokens.length} />
