@@ -72,6 +72,106 @@ function TokenRow({ t }) {
   );
 }
 
+function FeedPanel({ tokens }) {
+  const feed = tokens.slice(0, 9);
+  return (
+    <div className="dash-panel feed-panel">
+      <div className="dash-panel-head">
+        <span className="dash-panel-title">New Token Feed</span>
+        <span className="live-dot"><span className="live-pulse" />LIVE</span>
+      </div>
+      <div className="feed-cols">
+        <span>TIME</span>
+        <span>TOKEN</span>
+        <span>CONTRACT ADDRESS</span>
+      </div>
+      <div className="feed-rows">
+        {feed.map((t) => (
+          <div
+            key={t.address}
+            className="feed-row"
+            onClick={() => window.open(`https://dexscreener.com/robinhood/${t.address}`, "_blank", "noopener,noreferrer")}
+          >
+            <span className="feed-time">{new Date(t.ts * 1000).toLocaleTimeString()}</span>
+            <span className="feed-symbol">{t.symbol || "?"}</span>
+            <span className="feed-address">{t.address.slice(0, 6)}...{t.address.slice(-4)}</span>
+          </div>
+        ))}
+        {feed.length === 0 && <div className="feed-empty">No tokens yet</div>}
+      </div>
+      <div className="dash-panel-foot">
+        <span>TOTAL TRACKED</span>
+        <span className="dash-panel-foot-value">{tokens.length}</span>
+      </div>
+    </div>
+  );
+}
+
+function PendingPanel({ title, note }) {
+  return (
+    <div className="dash-panel pending-panel">
+      <div className="dash-panel-head">
+        <span className="dash-panel-title">{title}</span>
+      </div>
+      <div className="pending-body">
+        <span className="pending-icon">&#8943;</span>
+        <p>{note}</p>
+      </div>
+    </div>
+  );
+}
+
+function RiskPanel({ tokens }) {
+  const total = tokens.length;
+  const cleanCount = tokens.filter((t) => !t.flags).length;
+  const cappedCount = tokens.filter((t) => (t.flags ? t.flags.split(",").filter(Boolean).length : 0) >= 2).length;
+  const avgScore = total ? Math.round(tokens.reduce((s, t) => s + t.final_score, 0) / total) : 0;
+  const riskPct = total ? Math.round((cappedCount / total) * 100) : 0;
+  const riskLabel = riskPct >= 50 ? "HIGH RISK" : riskPct >= 20 ? "ELEVATED" : "LOW RISK";
+  const flagCounts = {};
+  tokens.forEach((t) => {
+    (t.flags ? t.flags.split(",").filter(Boolean) : []).forEach((f) => {
+      flagCounts[f] = (flagCounts[f] || 0) + 1;
+    });
+  });
+  const topFlags = Object.entries(flagCounts).sort((a, b) => b[1] - a[1]).slice(0, 4);
+
+  return (
+    <div className="dash-panel risk-panel">
+      <div className="dash-panel-head">
+        <span className="dash-panel-title">Risk Analysis</span>
+      </div>
+      <div className="gauge-wrap">
+        <span className="gauge-label">FLEET RISK SCORE</span>
+        <div className="gauge">
+          <svg viewBox="0 0 120 66" width="150" height="82">
+            <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="rgba(111,233,255,0.12)" strokeWidth="9" />
+            <path
+              d="M10,60 A50,50 0 0,1 110,60"
+              fill="none"
+              stroke="#6fe9ff"
+              strokeWidth="9"
+              strokeDasharray={`${(riskPct / 100) * 157} 157`}
+              style={{ filter: "drop-shadow(0 0 6px #6fe9ffaa)" }}
+            />
+          </svg>
+          <div className="gauge-value">{riskPct}</div>
+        </div>
+        <span className="gauge-tag">{riskLabel}</span>
+      </div>
+      <div className="risk-rows">
+        <div className="risk-row"><span>Avg Score</span><span>{avgScore}/90</span></div>
+        <div className="risk-row"><span>Clean Tokens</span><span>{cleanCount}/{total}</span></div>
+        <div className="risk-row"><span>Capped (2+ flags)</span><span>{cappedCount}/{total}</span></div>
+        {topFlags.map(([f, c]) => (
+          <div className="risk-row" key={f}><span>{f.replaceAll("_", " ")}</span><span>{c}</span></div>
+        ))}
+        {topFlags.length === 0 && <div className="risk-row"><span>No active flags</span><span>--</span></div>}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const [data, setData] = useState({ tokens: [], last_updated: null });
   const [loading, setLoading] = useState(true);
@@ -121,6 +221,10 @@ export default function Home() {
     return list;
   }, [data.tokens, sortKey, sortDir]);
 
+  const feedOrdered = useMemo(() => {
+    return (data.tokens || []).slice().sort((a, b) => b.ts - a.ts);
+  }, [data.tokens]);
+
   const recommendedCount = tokens.filter((t) => t.recommended).length;
   const topScore = tokens.length ? Math.max(...tokens.map((t) => t.final_score)) : 0;
   const cleanCount = tokens.filter((t) => !t.flags).length;
@@ -141,7 +245,23 @@ export default function Home() {
           )}
         </header>
 
-        <HoloCore label="Tokens Tracked" value={loading ? "--" : tokens.length} />
+        {!loading && (
+          <div className="dash-grid">
+            <FeedPanel tokens={feedOrdered} />
+            <PendingPanel
+              title="Liquidity / Volume"
+              note="Historical liquidity and volume charting needs raw time-series data added to the backend -- not yet wired."
+            />
+            <PendingPanel
+              title="Wallet Tracking"
+              note="Per-wallet holder addresses aren't exposed by the API yet -- only aggregate concentration is used internally for scoring."
+            />
+            <RiskPanel tokens={tokens} />
+            <div className="dash-core">
+              <HoloCore label="Live Token Activity" value={tokens.length} />
+            </div>
+          </div>
+        )}
 
         {!loading && tokens.length > 0 && (
           <div className="stat-row">
