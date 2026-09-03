@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Nav from "../components/Nav";
 
 const REFRESH_MS = 120000;
 
@@ -9,30 +9,54 @@ function fmtUsd(n) {
   return `$${n.toFixed(2)}`;
 }
 
-function Row({ c }) {
+function buzzPct(c, maxMentions) {
+  if (!maxMentions) return 0;
+  return Math.min(100, Math.round((c.twitter_mentions / maxMentions) * 100));
+}
+
+function GemCard({ c, maxMentions }) {
+  const pct = buzzPct(c, maxMentions);
   return (
-    <tr>
-      <td className="symbol-cell">
-        <span className="symbol">{c.symbol}</span>
-        <span className="address">{c.address ? `${c.address.slice(0, 6)}...${c.address.slice(-4)}` : ""}</span>
-      </td>
-      <td>{fmtUsd(c.market_cap_usd)}</td>
-      <td>{fmtUsd(c.liquidity_usd)}</td>
-      <td>{fmtUsd(c.volume_24h_usd)}</td>
-      <td className="buzz-cell">
-        <span className="mentions">{c.twitter_mentions} mentions</span>
-        <span className="authors">{c.twitter_distinct_authors} accounts</span>
-      </td>
-      <td>
-        {c.dexscreener_url ? (
+    <div className="gem-card">
+      <div className="gem-header">
+        <div>
+          <div className="gem-symbol">{c.symbol}</div>
+          {c.address && (
+            <div className="gem-address">{c.address.slice(0, 6)}...{c.address.slice(-4)}</div>
+          )}
+        </div>
+        {c.dexscreener_url && (
           <a href={c.dexscreener_url} target="_blank" rel="noreferrer" className="chart-link">
-            Chart &rarr;
+            Chart &#8599;
           </a>
-        ) : (
-          "--"
         )}
-      </td>
-    </tr>
+      </div>
+
+      <div className="gem-stats">
+        <div className="gem-stat">
+          <span className="gem-stat-label">Market Cap</span>
+          <span className="gem-stat-value">{fmtUsd(c.market_cap_usd)}</span>
+        </div>
+        <div className="gem-stat">
+          <span className="gem-stat-label">Liquidity</span>
+          <span className="gem-stat-value">{fmtUsd(c.liquidity_usd)}</span>
+        </div>
+        <div className="gem-stat">
+          <span className="gem-stat-label">24h Volume</span>
+          <span className="gem-stat-value">{fmtUsd(c.volume_24h_usd)}</span>
+        </div>
+      </div>
+
+      <div className="buzz-section">
+        <div className="buzz-bar-wrap">
+          <div className="buzz-bar" style={{ width: `${pct}%` }} />
+        </div>
+        <div className="buzz-labels">
+          <span>{c.twitter_mentions} mentions</span>
+          <span>{c.twitter_distinct_authors} accounts</span>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -58,50 +82,43 @@ export default function TwitterGems() {
     return () => clearInterval(id);
   }, []);
 
+  const coins = data.coins || [];
+  const maxMentions = coins.length ? Math.max(...coins.map((c) => c.twitter_mentions)) : 0;
+
   return (
-    <div className="container">
-      <header>
-        <h1>Twitter Gems -- Under ${(data.market_cap_ceiling || 500000).toLocaleString()} Market Cap</h1>
-        <p className="subtitle">
-          Personal research tool -- not financial advice. Low-cap Robinhood Chain coins with the loudest X activity.
-        </p>
-        <p className="nav-link"><Link href="/">&larr; Back to main screener</Link></p>
-        {data.last_updated && (
-          <p className="last-updated">
-            Data refreshed: {new Date(data.last_updated * 1000).toLocaleString()}
+    <div className="page">
+      <Nav />
+      <div className="container">
+        <header>
+          <h1>Twitter Gems</h1>
+          <p className="subtitle">
+            Under ${(data.market_cap_ceiling || 500000).toLocaleString()} market cap, ranked by X buzz. Personal research tool -- not financial advice.
           </p>
-        )}
-      </header>
+          {data.last_updated && (
+            <p className="last-updated">
+              Data refreshed: {new Date(data.last_updated * 1000).toLocaleString()}
+            </p>
+          )}
+        </header>
 
-      {loading ? (
-        <p>Loading...</p>
-      ) : data.coins.length === 0 ? (
-        <p className="empty">
-          No matches yet. Either the scan hasn't run, or nothing under the market cap ceiling has enough X buzz right now.
-        </p>
-      ) : (
-        <table>
-          <thead>
-            <tr>
-              <th>Token</th>
-              <th>Market Cap</th>
-              <th>Liquidity</th>
-              <th>24h Volume</th>
-              <th>Twitter Buzz</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.coins.map((c) => (
-              <Row key={c.symbol + (c.address || "")} c={c} />
+        {loading ? (
+          <p className="loading">Loading...</p>
+        ) : coins.length === 0 ? (
+          <p className="empty">
+            No matches yet. Either the scan hasn't run, or nothing under the market cap ceiling has enough X buzz right now.
+          </p>
+        ) : (
+          <div className="gem-grid">
+            {coins.map((c) => (
+              <GemCard key={c.symbol + (c.address || "")} c={c} maxMentions={maxMentions} />
             ))}
-          </tbody>
-        </table>
-      )}
+          </div>
+        )}
 
-      <footer>
-        <p>Ranked by mention count x distinct posting accounts (not repeat posts from the same account). Refreshes hourly.</p>
-      </footer>
+        <footer>
+          <p>Ranked by mention count x distinct posting accounts (not repeat posts from the same account). Refreshes hourly.</p>
+        </footer>
+      </div>
     </div>
   );
 }
