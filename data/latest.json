@@ -1,133 +1,285 @@
 {
-  "last_updated": 1788454251,
+  "last_updated": 1788462893,
   "tokens": [
-    {
-      "symbol": "Pixel Cat",
-      "address": "0x2A1c75De22cCAEfee15208E75Ef7d735dA4eD2F7",
-      "final_score": 33.09,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788454248
-    },
-    {
-      "symbol": "SNCK",
-      "address": "0x3F0eD089bE2a7836D208f19D25F30b5042cB9da7",
-      "final_score": 32.07,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788454233
-    },
-    {
-      "symbol": "ZEAL",
-      "address": "0x9fA1C5E90A11294F83A9F135b81ad1b537A5FFdC",
-      "final_score": 31.56,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788454219
-    },
-    {
-      "symbol": "INCOME",
-      "address": "0x15b8af231b3c5d0b052c93624cc4d1b2bf35b790",
-      "final_score": 31.5,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788454244
-    },
     {
       "symbol": "QGRID",
       "address": "0x7d4727A173aab10d158D6F164B671C92f99d6647",
-      "final_score": 31.0,
+      "final_score": 41.26,
       "recommended": 0,
-      "flags": "",
-      "ts": 1788454229
-    },
-    {
-      "symbol": "PLTR",
-      "address": "0xB7599339574488677157BdCC1D9c6D598485e507",
-      "final_score": 28.93,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788454239
-    },
-    {
-      "symbol": "TROLL",
-      "address": "0x1003Ebf9EE3C44685FF38927c3FdD9a0de9310F6",
-      "final_score": 28.92,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454205
-    },
-    {
-      "symbol": "biohacking",
-      "address": "0x67C61Bfb169ce68A61EF28E4CE9D7f53EFBd1e18",
-      "final_score": 28.78,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454201
-    },
-    {
-      "symbol": "ARC",
-      "address": "0xa988699DBB9eB4E35651A0F2a4CD3231118edc32",
-      "final_score": 28.66,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454216
-    },
-    {
-      "symbol": "ORGA",
-      "address": "0xAeb3eCeca97D662AA8F63d427370554aB56a56e3",
-      "final_score": 28.55,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454209
-    },
-    {
-      "symbol": "DRAW",
-      "address": "0x844695760f5107592EBa975A8281b52F113B0367",
-      "final_score": 28.03,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454193
-    },
-    {
-      "symbol": "Tendieman",
-      "address": "0x855331A2f182796C85C1E63228da72060f37c5F0",
-      "final_score": 27.83,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788454226
-    },
-    {
-      "symbol": "HOODWARS",
-      "address": "0x06E0284edfd5CEdC77e2589FdCDEEd3e57f21E18",
-      "final_score": 25.8,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788454223
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462828
     },
     {
       "symbol": "PEPE",
       "address": "0x637dd7000cf862ff2478a8c3b40d650c4e84ba94",
-      "final_score": 25.75,
+      "final_score": 35.02,
       "recommended": 0,
-      "flags": "one_sided_buy_pressure",
-      "ts": 1788454251
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462841
+    },
+    {
+      "symbol": "GREEN",
+      "address": "0x277caDb1b78Bc71f66EAC7713dffa6d95b498035",
+      "final_score": 33.93,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788462846
     },
     {
       "symbol": "SURF",
       "address": "0x4bbb8bfa18e8fe517a148ec04adac95918aca1f0",
-      "final_score": 22.74,
+      "final_score": 33.47,
+      "recommended": 0,
+      "flags": "one_sided_buy_pressure,high_top10_concentration",
+      "ts": 1788462816
+    },
+    {
+      "symbol": "JEET",
+      "address": "0xc5CfB1a50a9Fc816B6419B08807D79fE34901E18",
+      "final_score": 32.56,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462852
+    },
+    {
+      "symbol": "MeiMei",
+      "address": "0x28db538133883109f0c2680837c61a18631b428e",
+      "final_score": 30.96,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462891
+    },
+    {
+      "symbol": "BROCA",
+      "address": "0x18c93a38bca943f300469767e8fea72e5b8ebd73",
+      "final_score": 30.61,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462869
+    },
+    {
+      "symbol": "PRSA",
+      "address": "0x17447b96fCa558003634b838484299B5aA9BC6d6",
+      "final_score": 30.52,
       "recommended": 0,
       "flags": "",
-      "ts": 1788454213
+      "ts": 1788462888
+    },
+    {
+      "symbol": "MAXXING",
+      "address": "0x89867bFC1CA389f656097838B307664a5063Cbf6",
+      "final_score": 30.29,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788462854
+    },
+    {
+      "symbol": "SILVERBACK",
+      "address": "0x3d7341A260A2EE460C9D68E302C2E0C883487039",
+      "final_score": 29.87,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462857
+    },
+    {
+      "symbol": "A",
+      "address": "0x05D73A652529f0b1a6Dd2B89dE26b449eC9F1e18",
+      "final_score": 29.81,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788462862
+    },
+    {
+      "symbol": "GOONCOIN",
+      "address": "0xaeeec8c7a7be109db246742051ced3a9e8e260bc",
+      "final_score": 28.78,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462872
+    },
+    {
+      "symbol": "WRESTLER",
+      "address": "0xaB528169DCC80d68837a33b1e2b866bB7D7EE301",
+      "final_score": 27.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462886
+    },
+    {
+      "symbol": "BE",
+      "address": "0x7981992155389b44c17e08422749d77023Be2ba3",
+      "final_score": 26.55,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462893
+    },
+    {
+      "symbol": "SNCK",
+      "address": "0x3F0eD089bE2a7836D208f19D25F30b5042cB9da7",
+      "final_score": 24.81,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462830
+    },
+    {
+      "symbol": "CLAY",
+      "address": "0x6E3FDFD69fbE1572AB63b09a3Fb7b47C1912167f",
+      "final_score": 23.96,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462859
+    },
+    {
+      "symbol": "SHROOM",
+      "address": "0x44C9E8257B2bcD5009cE490F3C27A159f637e7F8",
+      "final_score": 23.19,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462874
+    },
+    {
+      "symbol": "ARC",
+      "address": "0xa988699DBB9eB4E35651A0F2a4CD3231118edc32",
+      "final_score": 22.47,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462818
+    },
+    {
+      "symbol": "HOODWARS",
+      "address": "0x06E0284edfd5CEdC77e2589FdCDEEd3e57f21E18",
+      "final_score": 21.49,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462823
+    },
+    {
+      "symbol": "TROLL",
+      "address": "0x1003Ebf9EE3C44685FF38927c3FdD9a0de9310F6",
+      "final_score": 20.52,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462809
+    },
+    {
+      "symbol": "ZEAL",
+      "address": "0x9fA1C5E90A11294F83A9F135b81ad1b537A5FFdC",
+      "final_score": 20.49,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788462821
+    },
+    {
+      "symbol": "Tendieman",
+      "address": "0x855331A2f182796C85C1E63228da72060f37c5F0",
+      "final_score": 18.94,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788462826
+    },
+    {
+      "symbol": "DRAW",
+      "address": "0x844695760f5107592EBa975A8281b52F113B0367",
+      "final_score": 18.48,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462802
+    },
+    {
+      "symbol": "Pixel Cat",
+      "address": "0x2A1c75De22cCAEfee15208E75Ef7d735dA4eD2F7",
+      "final_score": 18.45,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462838
+    },
+    {
+      "symbol": "DYOR",
+      "address": "0x22B1a8259b65ad972300cd34Fc420D2f33c4093C",
+      "final_score": 18.15,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462849
+    },
+    {
+      "symbol": "INCOME",
+      "address": "0x15b8af231b3c5d0b052c93624cc4d1b2bf35b790",
+      "final_score": 18.12,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462835
+    },
+    {
+      "symbol": "PLTR",
+      "address": "0xB7599339574488677157BdCC1D9c6D598485e507",
+      "final_score": 17.19,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462833
+    },
+    {
+      "symbol": "biohacking",
+      "address": "0x67C61Bfb169ce68A61EF28E4CE9D7f53EFBd1e18",
+      "final_score": 13.75,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788462807
     },
     {
       "symbol": null,
       "address": "0xe4b167e9cd1d8753ce709287aa19dd0f09ed2592",
-      "final_score": 7.93,
+      "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788454198
+      "ts": 1788462804
+    },
+    {
+      "symbol": "ORGA",
+      "address": "0xAeb3eCeca97D662AA8F63d427370554aB56a56e3",
+      "final_score": 10.78,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462813
+    },
+    {
+      "symbol": null,
+      "address": "0x4214e44c97865858d78e37d5d4ee3262acf30406",
+      "final_score": 9.18,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462878
+    },
+    {
+      "symbol": null,
+      "address": "0x60d3e8e13cb119b8fc7dd76d5e522ab1912c65fc",
+      "final_score": 9.01,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462880
+    },
+    {
+      "symbol": null,
+      "address": "0x92e43fd417a12f9633446fb40c8aa5265c2659b3",
+      "final_score": 8.79,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462883
+    },
+    {
+      "symbol": null,
+      "address": "0xd38ae03e7c034c1fb69e1c9619ab159d9b32514c",
+      "final_score": 6.58,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462844
+    },
+    {
+      "symbol": null,
+      "address": "0xd7fbfa381d3ce256fd8df3548a9a34632bcbc989",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788462866
     }
   ]
 }
