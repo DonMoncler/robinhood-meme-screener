@@ -1,141 +1,133 @@
 {
-  "last_updated": 1788452401,
+  "last_updated": 1788454251,
   "tokens": [
     {
-      "symbol": null,
-      "address": "0x500c6376ca9c78cdf8511bbd17bcc185df708185",
-      "final_score": 31.93,
+      "symbol": "Pixel Cat",
+      "address": "0x2A1c75De22cCAEfee15208E75Ef7d735dA4eD2F7",
+      "final_score": 33.09,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788452366
+      "ts": 1788454248
     },
     {
-      "symbol": null,
-      "address": "0xdd125e0922d31657ea48f0bdaf989c58d7f1f0af",
-      "final_score": 31.41,
+      "symbol": "SNCK",
+      "address": "0x3F0eD089bE2a7836D208f19D25F30b5042cB9da7",
+      "final_score": 32.07,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788452390
+      "ts": 1788454233
     },
     {
-      "symbol": null,
-      "address": "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b",
-      "final_score": 31.03,
+      "symbol": "ZEAL",
+      "address": "0x9fA1C5E90A11294F83A9F135b81ad1b537A5FFdC",
+      "final_score": 31.56,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788452401
+      "ts": 1788454219
     },
     {
-      "symbol": null,
-      "address": "0x027a7c97d456765bcdd4ab011a36de4e7933eb01",
-      "final_score": 30.93,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788452393
-    },
-    {
-      "symbol": null,
-      "address": "0x15B4bA895FEed50F3192F145A5C84172F2F7dE17",
-      "final_score": 30.64,
+      "symbol": "INCOME",
+      "address": "0x15b8af231b3c5d0b052c93624cc4d1b2bf35b790",
+      "final_score": 31.5,
       "recommended": 0,
       "flags": "",
-      "ts": 1788452361
+      "ts": 1788454244
     },
     {
-      "symbol": null,
-      "address": "0x07415245cEb76D25BC96C403cAD2Cf2A5bba2EA4",
-      "final_score": 30.61,
+      "symbol": "QGRID",
+      "address": "0x7d4727A173aab10d158D6F164B671C92f99d6647",
+      "final_score": 31.0,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788454229
+    },
+    {
+      "symbol": "PLTR",
+      "address": "0xB7599339574488677157BdCC1D9c6D598485e507",
+      "final_score": 28.93,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788452371
+      "ts": 1788454239
     },
     {
-      "symbol": null,
-      "address": "0x25976d9754b95bff235443a5f3e20ad7a728e7a2",
-      "final_score": 30.44,
+      "symbol": "TROLL",
+      "address": "0x1003Ebf9EE3C44685FF38927c3FdD9a0de9310F6",
+      "final_score": 28.92,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788452357
+      "ts": 1788454205
     },
     {
-      "symbol": null,
-      "address": "0x32aC8C1D7672667D5EbdEa22935F7B06fC8D496f",
-      "final_score": 28.1,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788452382
-    },
-    {
-      "symbol": null,
-      "address": "0xb0dbb6bdeaaa3c4a7cbe8ffb5074f8a44819a349",
-      "final_score": 24.03,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788452385
-    },
-    {
-      "symbol": null,
-      "address": "0x003ABF07523eBCdE55B310F35C4516564fDc8AeF",
-      "final_score": 22.73,
+      "symbol": "biohacking",
+      "address": "0x67C61Bfb169ce68A61EF28E4CE9D7f53EFBd1e18",
+      "final_score": 28.78,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788452374
+      "ts": 1788454201
     },
     {
-      "symbol": null,
-      "address": "0xB51d57cBE67152fD163F59D1e0F950C6b647fB07",
-      "final_score": 22.43,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788452396
-    },
-    {
-      "symbol": null,
-      "address": "0x9f637f4eE9079602011b6641E07a30711856B2ea",
-      "final_score": 20.7,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788452387
-    },
-    {
-      "symbol": null,
-      "address": "0x3230dafDEd80807B941e89bE40B327e858fea0C7",
-      "final_score": 19.04,
+      "symbol": "ARC",
+      "address": "0xa988699DBB9eB4E35651A0F2a4CD3231118edc32",
+      "final_score": 28.66,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788452368
+      "ts": 1788454216
+    },
+    {
+      "symbol": "ORGA",
+      "address": "0xAeb3eCeca97D662AA8F63d427370554aB56a56e3",
+      "final_score": 28.55,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788454209
+    },
+    {
+      "symbol": "DRAW",
+      "address": "0x844695760f5107592EBa975A8281b52F113B0367",
+      "final_score": 28.03,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788454193
+    },
+    {
+      "symbol": "Tendieman",
+      "address": "0x855331A2f182796C85C1E63228da72060f37c5F0",
+      "final_score": 27.83,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788454226
+    },
+    {
+      "symbol": "HOODWARS",
+      "address": "0x06E0284edfd5CEdC77e2589FdCDEEd3e57f21E18",
+      "final_score": 25.8,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788454223
+    },
+    {
+      "symbol": "PEPE",
+      "address": "0x637dd7000cf862ff2478a8c3b40d650c4e84ba94",
+      "final_score": 25.75,
+      "recommended": 0,
+      "flags": "one_sided_buy_pressure",
+      "ts": 1788454251
+    },
+    {
+      "symbol": "SURF",
+      "address": "0x4bbb8bfa18e8fe517a148ec04adac95918aca1f0",
+      "final_score": 22.74,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788454213
     },
     {
       "symbol": null,
-      "address": "0x45ad9acb52e3dc1876a73028d29ea92ebfd8759a",
-      "final_score": 9.67,
+      "address": "0xe4b167e9cd1d8753ce709287aa19dd0f09ed2592",
+      "final_score": 7.93,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788452363
-    },
-    {
-      "symbol": null,
-      "address": "0xc76ee2ecc149b3416036ecd5fd4df6ad6a60717e",
-      "final_score": 8.5,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788452379
-    },
-    {
-      "symbol": null,
-      "address": "0x75d5f1d18fe16f27dcdbe76bb5bfaeafe3456279",
-      "final_score": 8.38,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788452399
-    },
-    {
-      "symbol": null,
-      "address": "0xb84ec4921924048c04077e9cb011d9c4d55c2a70",
-      "final_score": 8.37,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788452377
+      "ts": 1788454198
     }
   ]
 }
