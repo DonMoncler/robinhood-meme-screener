@@ -4,13 +4,16 @@ finds cashtags being talked about on X, cross-references each against
 DexScreener for market cap + liquidity, filters to market cap < $500k,
 and ranks the survivors by Twitter buzz.
 
-This is a SEPARATE screening view from the main momentum-score dashboard
--- it answers "what's small and loud right now," not "what scores well
-across all four sub-scores." Run on a slower cadence than the main
-15-min poll loop (hourly is plenty) since Apify calls cost money.
-
-Usage: python twitter_discovery.py
-Writes: data/twitter_gems.json
+v2 fixes:
+- Ignore major-asset cashtags ($BTC, $ETH, $USDT, etc.) -- these are not
+  obscure Robinhood Chain meme coins, they're noise from generic crypto
+  tweets, and searching DexScreener for them returns garbage.
+- Reject any DexScreener match whose symbol/name is implausibly long
+  (>15 chars) -- this is a known impersonation-token scam pattern: a
+  token names itself with dozens of major ticker symbols crammed
+  together (e.g. "BTCETHUSDTBNB...") so it surfaces in searches for
+  ANY of those tickers. One such token showed up as the top "BTC"
+  result and broke the dashboard layout before this filter existed.
 """
 import json
 import re
@@ -22,12 +25,18 @@ import dexscreener_client as ds
 
 MARKET_CAP_CEILING = 500_000
 TOP_N = 10
+MAX_SYMBOL_LEN = 15
 
 CASHTAG_RE = re.compile(r"\$([A-Za-z][A-Za-z0-9]{1,9})\b")
 
-# Broad search covering general Robinhood Chain meme coin chatter.
-# Keep this to 1-2 queries per run to control Apify cost -- batch as
-# many relevant keywords/cashtags into one OR-joined string as you can.
+# Major/established assets to ignore -- we only care about obscure
+# Robinhood Chain meme coins, not noise from generic crypto chatter.
+MAJOR_ASSET_BLOCKLIST = {
+    "BTC", "ETH", "USDT", "USDC", "BNB", "XRP", "SOL", "TRX", "DOGE",
+    "ADA", "LINK", "AVAX", "SHIB", "DOT", "MATIC", "LTC", "BCH", "XLM",
+    "UNI", "ATOM", "ETC", "FIL", "APT", "ARB", "OP", "NEAR", "HOOD",
+}
+
 SEARCH_TERMS = [
     '("Robinhood Chain" OR "RobinhoodChain" OR "#RobinhoodChain") (meme OR coin OR token) lang:en',
 ]
@@ -44,6 +53,7 @@ def extract_cashtag_stats(tweets):
         replies = t.get("replyCount") or 0
 
         tags = set(m.upper() for m in CASHTAG_RE.findall(text))
+        tags -= MAJOR_ASSET_BLOCKLIST
         for tag in tags:
             s = stats.setdefault(tag, {"mentions": 0, "authors": set(), "engagement": 0, "followers_sum": 0})
             s["mentions"] += 1
@@ -62,6 +72,15 @@ def extract_cashtag_stats(tweets):
     return out
 
 
+def is_plausible_token(symbol, name):
+    """Reject impersonation/decoy tokens with implausibly long symbol/name strings."""
+    if symbol and len(symbol) > MAX_SYMBOL_LEN:
+        return False
+    if name and len(name) > 40:
+        return False
+    return True
+
+
 def enrich_with_market_data(cashtag_stats):
     results = []
     for tag, stats in cashtag_stats.items():
@@ -74,7 +93,18 @@ def enrich_with_market_data(cashtag_stats):
         if not pairs:
             continue
 
-        best = max(pairs, key=lambda p: (p.get("liquidity") or {}).get("usd") or 0)
+        plausible_pairs = [
+            p for p in pairs
+            if is_plausible_token(
+                (p.get("baseToken") or {}).get("symbol"),
+                (p.get("baseToken") or {}).get("name"),
+            )
+        ]
+        if not plausible_pairs:
+            print(f"[{tag}] all DexScreener matches look like impersonation tokens -- skipped")
+            continue
+
+        best = max(plausible_pairs, key=lambda p: (p.get("liquidity") or {}).get("usd") or 0)
         market_cap = best.get("marketCap") or best.get("fdv")
         if market_cap is None or market_cap <= 0 or market_cap >= MARKET_CAP_CEILING:
             continue
@@ -96,7 +126,6 @@ def enrich_with_market_data(cashtag_stats):
 
 
 def buzz_score(item):
-    """Simple composite: mentions x distinct authors, tie-broken by engagement."""
     return (item["twitter_mentions"] * item["twitter_distinct_authors"], item["twitter_engagement"])
 
 
@@ -108,7 +137,7 @@ if __name__ == "__main__":
         tweets = []
 
     cashtag_stats = extract_cashtag_stats(tweets)
-    print(f"Found {len(cashtag_stats)} distinct cashtags mentioned.")
+    print(f"Found {len(cashtag_stats)} distinct cashtags mentioned (after blocklist filter).")
 
     enriched = enrich_with_market_data(cashtag_stats)
     enriched.sort(key=buzz_score, reverse=True)

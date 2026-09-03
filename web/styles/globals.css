@@ -9,11 +9,11 @@ body {
 header h1 { font-size: 24px; margin-bottom: 4px; }
 .subtitle { color: #8b949e; font-size: 13px; margin: 0 0 4px; }
 .last-updated { color: #8b949e; font-size: 12px; margin: 0 0 20px; }
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
 th { text-align: left; color: #8b949e; font-weight: 500; padding: 8px 10px; border-bottom: 1px solid #30363d; }
-td { padding: 10px; border-bottom: 1px solid #21262d; vertical-align: middle; }
-.symbol-cell { display: flex; flex-direction: column; }
-.symbol { font-weight: 600; }
+td { padding: 10px; border-bottom: 1px solid #21262d; vertical-align: middle; overflow: hidden; }
+.symbol-cell { display: flex; flex-direction: column; overflow: hidden; }
+.symbol { font-weight: 600; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; }
 .address { color: #8b949e; font-size: 11px; }
 .score-bar-wrap { position: relative; background: #21262d; border-radius: 6px; height: 22px; width: 160px; overflow: hidden; }
 .score-bar { height: 100%; border-radius: 6px; }
