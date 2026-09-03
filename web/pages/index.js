@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const REFRESH_MS = 60000;
 
@@ -74,6 +75,7 @@ export default function Home() {
         <p className="subtitle">
           Personal research tool -- not financial advice. Chain ID 4663.
         </p>
+        <p className="nav-link"><Link href="/twitter-gems">Twitter Gems (low-cap, high-buzz) &rarr;</Link></p>
         {data.last_updated && (
           <p className="last-updated">
             Data refreshed: {new Date(data.last_updated * 1000).toLocaleString()}

@@ -26,3 +26,12 @@ td { padding: 10px; border-bottom: 1px solid #21262d; vertical-align: middle; }
 .ts-cell { color: #8b949e; font-size: 12px; }
 .empty { color: #8b949e; }
 footer { margin-top: 24px; color: #6e7681; font-size: 12px; }
+
+.nav-link { margin: 4px 0 12px; }
+.nav-link a { color: #58a6ff; text-decoration: none; font-size: 13px; }
+.nav-link a:hover { text-decoration: underline; }
+.buzz-cell { display: flex; flex-direction: column; font-size: 12px; }
+.mentions { color: #e6edf3; }
+.authors { color: #8b949e; }
+.chart-link { color: #58a6ff; text-decoration: none; font-size: 13px; }
+.chart-link:hover { text-decoration: underline; }
