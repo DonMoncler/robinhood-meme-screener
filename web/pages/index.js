@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import Nav from "../components/Nav";
+import HoloCore from "../components/HoloCore";
 
 const REFRESH_MS = 60000;
 
 function scoreColor(score) {
-  if (score >= 60) return "#3fe08a";
-  if (score >= 45) return "#f5c542";
+  if (score >= 60) return "#6fe9ff";
+  if (score >= 45) return "#8ff3ff";
   return "#ff5c6c";
 }
 
@@ -140,11 +141,13 @@ export default function Home() {
           )}
         </header>
 
+        <HoloCore label="Tokens Tracked" value={loading ? "--" : tokens.length} />
+
         {!loading && tokens.length > 0 && (
           <div className="stat-row">
             <StatCard label="Tokens tracked" value={tokens.length} />
-            <StatCard label="Recommended" value={recommendedCount} accent="#3fe08a" />
-            <StatCard label="Top score" value={`${topScore}/90`} accent="#58a6ff" />
+            <StatCard label="Recommended" value={recommendedCount} accent="#6fe9ff" />
+            <StatCard label="Top score" value={`${topScore}/90`} accent="#6fe9ff" />
             <StatCard label="Clean (no flags)" value={cleanCount} />
           </div>
         )}

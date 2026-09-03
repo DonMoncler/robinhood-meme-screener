@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Nav from "../components/Nav";
+import HoloCore from "../components/HoloCore";
 
 const REFRESH_MS = 120000;
 
@@ -102,6 +103,8 @@ export default function TwitterGems() {
             </p>
           )}
         </header>
+
+        <HoloCore label="Buzzing Coins" value={loading ? "--" : coins.length} />
 
         {loading ? (
           <p className="loading">Loading...</p>
