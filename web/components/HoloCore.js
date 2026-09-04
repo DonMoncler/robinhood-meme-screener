@@ -10,8 +10,10 @@ export default function HoloCore({ label = "LIVE FEED", value }) {
       </div>
       <div className="holo-core-label">
         <span className="holo-core-tag">{label}</span>
+        <span className="holo-core-sub">Updating...</span>
         {value !== undefined && <span className="holo-core-value">{value}</span>}
       </div>
+      <div className="holo-core-beam" />
     </div>
   );
 }

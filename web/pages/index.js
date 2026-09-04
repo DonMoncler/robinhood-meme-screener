@@ -131,7 +131,7 @@ function RecommendedPanel({ tokens }) {
             <div className="rec-row-bar-wrap">
               <div
                 className="rec-row-bar"
-                style={{ width: `${(t.final_score / 90) * 100}%`, background: scoreColor(t.final_score) }}
+                style={{ width: `${(t.final_score / 90) * 100}%` }}
               />
             </div>
             <span className="rec-row-score">{t.final_score}</span>
