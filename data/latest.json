@@ -1,653 +1,661 @@
 {
-  "last_updated": 1788570083,
+  "last_updated": 1788587432,
   "tokens": [
-    {
-      "symbol": "Stocker",
-      "address": "0x1F20837dAf4F566Ba0db16Ceb25F879fB411ab1c",
-      "final_score": 52.71,
-      "recommended": 1,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569982
-    },
-    {
-      "symbol": "HOVER",
-      "address": "0xf7d2A651188EA9f52cc802B3D962eB6c88bfABa3",
-      "final_score": 46.33,
-      "recommended": 1,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570043
-    },
-    {
-      "symbol": "ZEAL",
-      "address": "0x9fA1C5E90A11294F83A9F135b81ad1b537A5FFdC",
-      "final_score": 45.29,
-      "recommended": 1,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569603
-    },
-    {
-      "symbol": "CARDS",
-      "address": "0xC6fAfE4d9937e6256EEeBa065DC706aD9cB828a2",
-      "final_score": 41.24,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569993
-    },
-    {
-      "symbol": "BOOMER",
-      "address": "0x73c2dE14C7FA0a57cc2d9722b959eA70B881fFe4",
-      "final_score": 40.48,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569788
-    },
-    {
-      "symbol": "PARCAT",
-      "address": "0xF3c5B06CD59c5E2018EA483482eCe29005Cff7Ba",
-      "final_score": 40.0,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570022
-    },
-    {
-      "symbol": "SLINK",
-      "address": "0x6BE7f3dA0809DcEe41de05003391149338ac2f3D",
-      "final_score": 40.0,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570026
-    },
-    {
-      "symbol": "TROLL",
-      "address": "0x1003Ebf9EE3C44685FF38927c3FdD9a0de9310F6",
-      "final_score": 37.81,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569577
-    },
-    {
-      "symbol": "SNCK",
-      "address": "0x3F0eD089bE2a7836D208f19D25F30b5042cB9da7",
-      "final_score": 36.67,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569611
-    },
-    {
-      "symbol": "Goblin",
-      "address": "0xcD405B55F0185D2D55394cA051Fda69af9036Fce",
-      "final_score": 35.48,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569957
-    },
-    {
-      "symbol": "CHANG",
-      "address": "0xCBB3459375F03241a6201A6f42C2dbf3CE441E18",
-      "final_score": 34.03,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569792
-    },
     {
       "symbol": "SIZE",
       "address": "0x0F421d05e67B9E25D754e8e685af91b37bFf6CEf",
-      "final_score": 33.58,
+      "final_score": 42.23,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569945
-    },
-    {
-      "symbol": "BUBBLE",
-      "address": "0xe6f4225a974b19ee68ed69821d489189b0ae9ba9",
-      "final_score": 33.4,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570035
-    },
-    {
-      "symbol": "NOTFLIX",
-      "address": "0xa3817DCd65168c7A5485C1587f99cc98A4627443",
-      "final_score": 33.1,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570009
-    },
-    {
-      "symbol": "7",
-      "address": "0xddab134ba6e54ab5351789ddbbcd3525c80c8665",
-      "final_score": 32.24,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788570063
-    },
-    {
-      "symbol": "ZZZ",
-      "address": "0x7dbf38976f6D3b9c529e7D9484A71898B409eE6a",
-      "final_score": 31.9,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570071
-    },
-    {
-      "symbol": "PSDQ",
-      "address": "0x0b8bbBE6C7439E938477f57e8a88598813125Adc",
-      "final_score": 31.55,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569808
-    },
-    {
-      "symbol": "ELONGATE",
-      "address": "0xa9D63206B3E9630B567068fDb6dD88A24E5C1E18",
-      "final_score": 31.51,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570061
-    },
-    {
-      "symbol": "CRCL",
-      "address": "0x51D1aBaB4d1E7B50642A25D3f7B2823067eBF9d7",
-      "final_score": 31.45,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569943
-    },
-    {
-      "symbol": "PRLX",
-      "address": "0xb0119a052a184cf4dfb5c7808705a7fb0860d56a",
-      "final_score": 31.22,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788570053
-    },
-    {
-      "symbol": "shuvon",
-      "address": "0x99A496a30E8921DFB4212D771F262c43c532c2cC",
-      "final_score": 31.21,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570052
-    },
-    {
-      "symbol": "69",
-      "address": "0xeb49006e1C70a6a7E248aA23E2F2ae3AeBc81128",
-      "final_score": 30.78,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570083
-    },
-    {
-      "symbol": "LUNA9",
-      "address": "0x9663985492af1B339D959A800592ed131090F264",
-      "final_score": 30.3,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570013
-    },
-    {
-      "symbol": "WRESTLER",
-      "address": "0xaB528169DCC80d68837a33b1e2b866bB7D7EE301",
-      "final_score": 30.17,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569678
-    },
-    {
-      "symbol": "SPRM",
-      "address": "0x90aB6e4B8FaaF3d5407f253DFF070D222D1Bf10b",
-      "final_score": 30.16,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570057
-    },
-    {
-      "symbol": "PONSI",
-      "address": "0x5982f195A5232BDFFc7339EBF4edf59F162efFe9",
-      "final_score": 29.71,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569915
-    },
-    {
-      "symbol": "USDG",
-      "address": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
-      "final_score": 29.65,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570033
+      "ts": 1788587089
     },
     {
       "symbol": "eagle",
       "address": "0xB36CD262e108750F2EeCd8C859C074eA528Af4Ee",
-      "final_score": 29.58,
+      "final_score": 41.83,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570065
-    },
-    {
-      "symbol": "PAIRED",
-      "address": "0x533288775CcF0c43F035A5A7820f63627A3781e8",
-      "final_score": 29.34,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788570066
-    },
-    {
-      "symbol": "7",
-      "address": "0x9701c852d98795d03b149a9c94737b0c0aaedda1",
-      "final_score": 29.16,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569992
-    },
-    {
-      "symbol": "DIESEL",
-      "address": "0xED44A1B434d59B8c4F162D67A43eB198d4C64CB6",
-      "final_score": 29.08,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570073
-    },
-    {
-      "symbol": "A",
-      "address": "0x05D73A652529f0b1a6Dd2B89dE26b449eC9F1e18",
-      "final_score": 28.71,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569648
-    },
-    {
-      "symbol": "SOUNDER",
-      "address": "0x4214e44c97865858d78e37d5d4ee3262acf30406",
-      "final_score": 28.59,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569668
-    },
-    {
-      "symbol": "biohacking",
-      "address": "0x67C61Bfb169ce68A61EF28E4CE9D7f53EFBd1e18",
-      "final_score": 27.76,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569554
-    },
-    {
-      "symbol": "RIDE",
-      "address": "0x8b3e3BA1A55b939f93F0a205F94520b9468e17f8",
-      "final_score": 27.71,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569970
-    },
-    {
-      "symbol": "INVESTOR",
-      "address": "0x79840f0d9e7df055b12cf9bb97fd61ba4a9f7b87",
-      "final_score": 27.6,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569980
-    },
-    {
-      "symbol": "CLAWDE",
-      "address": "0xf5cb4837284ca06c65c09fcef84ea889bb358df3",
-      "final_score": 27.4,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570069
-    },
-    {
-      "symbol": "MEMEFLIX",
-      "address": "0xBb6eC1e12a2d36B0b31D4E155BfAB92b2C69B3d4",
-      "final_score": 27.25,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570030
-    },
-    {
-      "symbol": "TRAIL",
-      "address": "0x76c64776061cbf3ed3d14356b49bcf064b0ecaf4",
-      "final_score": 26.7,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569730
-    },
-    {
-      "symbol": "MAXXING",
-      "address": "0x89867bFC1CA389f656097838B307664a5063Cbf6",
-      "final_score": 26.6,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569638
-    },
-    {
-      "symbol": "INCOME",
-      "address": "0x15b8af231b3c5d0b052c93624cc4d1b2bf35b790",
-      "final_score": 26.55,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569620
-    },
-    {
-      "symbol": "gatcha",
-      "address": "0x8F21138Afcbe82E12061fD02630BB488d7585Fd8",
-      "final_score": 26.08,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569713
+      "ts": 1788587332
     },
     {
       "symbol": "NVDA $BRRR",
       "address": "0x43b96E852E662033031770125F860aE03b473dC8",
-      "final_score": 25.84,
+      "final_score": 40.54,
       "recommended": 0,
-      "flags": "one_sided_buy_pressure",
-      "ts": 1788570074
+      "flags": "",
+      "ts": 1788587346
     },
     {
-      "symbol": "BITCAT",
-      "address": "0x0281313f80e3aa465179FE02c31C4F3CEa2eF9B3",
-      "final_score": 25.82,
+      "symbol": "DYOR",
+      "address": "0x22B1a8259b65ad972300cd34Fc420D2f33c4093C",
+      "final_score": 40.11,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569745
+      "ts": 1788586281
     },
     {
-      "symbol": "MSTR",
-      "address": "0x99452D7519e103daF9bC9f02311DD164a073A7A2",
-      "final_score": 25.8,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569885
-    },
-    {
-      "symbol": "KPOP",
-      "address": "0xca3ce24FB1a6E7dB0003f9c785405A851E3F1e18",
-      "final_score": 25.77,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570015
-    },
-    {
-      "symbol": "CRC",
-      "address": "0x446adB118f5F15F2a749E38288D4025b55F3e095",
-      "final_score": 25.63,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570017
-    },
-    {
-      "symbol": "GLDR",
-      "address": "0x46Bd9f1276234651D9Be3Ade250203C2094E1e18",
-      "final_score": 25.47,
+      "symbol": "PARS",
+      "address": "0xB7667B14272304Ffe35e5d40726c6D66b6Fc4ca2",
+      "final_score": 38.33,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570059
-    },
-    {
-      "symbol": "ZXPAD",
-      "address": "0x485BA39Dc4da8D09ad8e736785b44661188aE1ca",
-      "final_score": 25.2,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569857
-    },
-    {
-      "symbol": "TRIPPY",
-      "address": "0x60d3e8e13cb119b8fc7dd76d5e522ab1912c65fc",
-      "final_score": 25.1,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569672
-    },
-    {
-      "symbol": "BROCA",
-      "address": "0x18c93a38bca943f300469767e8fea72e5b8ebd73",
-      "final_score": 24.93,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569653
-    },
-    {
-      "symbol": "OLY",
-      "address": "0x8E8266b11eAFf21998b31c5aD258198e103e1fB0",
-      "final_score": 24.35,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570081
-    },
-    {
-      "symbol": "Figure03",
-      "address": "0xB05618FE540d0bE2bd193153dE86A9f84dE0D76A",
-      "final_score": 23.9,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569774
-    },
-    {
-      "symbol": "Gat ciberp",
-      "address": "0xC0c82cC308e493A3B966b87B9F9862b6CE84068f",
-      "final_score": 23.86,
-      "recommended": 0,
-      "flags": "one_sided_buy_pressure,implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569864
+      "ts": 1788587351
     },
     {
       "symbol": "ASTRO",
       "address": "0x145ea700b2f8b8414eB8F6dddcd022b6690aA50a",
-      "final_score": 23.78,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569939
-    },
-    {
-      "symbol": "NATION",
-      "address": "0xc839A88A05B231515a82c71EE97b4F18973C1340",
-      "final_score": 23.78,
+      "final_score": 38.08,
       "recommended": 0,
       "flags": "",
-      "ts": 1788570008
-    },
-    {
-      "symbol": "SIRIUS",
-      "address": "0xBaFCEC4E4fA6D0f7b82DA6e47e62204955B71E76",
-      "final_score": 23.3,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569689
-    },
-    {
-      "symbol": "HOOKED",
-      "address": "0x33fE46bDE7057ca3c1242346933F5d1862B06191",
-      "final_score": 23.29,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569757
-    },
-    {
-      "symbol": "RHJ",
-      "address": "0xF7E8a7C50eEf98EabeED5BDd71E22c96C300E33D",
-      "final_score": 23.19,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569871
-    },
-    {
-      "symbol": "SHROOM",
-      "address": "0x44C9E8257B2bcD5009cE490F3C27A159f637e7F8",
-      "final_score": 22.88,
-      "recommended": 0,
-      "flags": "one_sided_buy_pressure",
-      "ts": 1788569665
-    },
-    {
-      "symbol": "Buck",
-      "address": "0x4f94713e7B25cAB3348119998262A31e3aA79867",
-      "final_score": 22.73,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570049
-    },
-    {
-      "symbol": "SQUEEZE",
-      "address": "0x67C9E77BEe8cE5250Fc0dbdb38FC89338Eb87B32",
-      "final_score": 22.51,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570034
-    },
-    {
-      "symbol": "STAQ",
-      "address": "0xB553607D0c418223afFd765143c26Cf327495d06",
-      "final_score": 22.41,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569707
-    },
-    {
-      "symbol": "HODL",
-      "address": "0xd65e8A7743735Cd9b61F281906D36384E155c29e",
-      "final_score": 22.33,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569728
-    },
-    {
-      "symbol": "CASH",
-      "address": "0x39eAb8a4e0025A647B663eC61696501DB206DA8e",
-      "final_score": 22.24,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570056
-    },
-    {
-      "symbol": "GROK",
-      "address": "0x573Edd7b96E0cC6ee90AE525E64e69ab8AF71E18",
-      "final_score": 22.12,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570002
-    },
-    {
-      "symbol": "BAREBACK",
-      "address": "0x52c5A76D81A1228A30f70A448E7a804a659f1e18",
-      "final_score": 22.05,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569955
-    },
-    {
-      "symbol": "PRSA",
-      "address": "0x17447b96fCa558003634b838484299B5aA9BC6d6",
-      "final_score": 21.96,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569680
-    },
-    {
-      "symbol": "PEPE",
-      "address": "0x637dd7000cf862ff2478a8c3b40d650c4e84ba94",
-      "final_score": 21.71,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569626
-    },
-    {
-      "symbol": "NVDA",
-      "address": "0xaf3ce2968d46c2cc54d89d8d4ec88f94313f74e3",
-      "final_score": 21.56,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569844
-    },
-    {
-      "symbol": "18932",
-      "address": "0xb613a657454b9d39e04839A9f10e1b224FbB86A6",
-      "final_score": 21.5,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569935
-    },
-    {
-      "symbol": "concern",
-      "address": "0xf5F5F51C4ab83C303c4fAD5b6A0838E106eF1e18",
-      "final_score": 21.49,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569868
-    },
-    {
-      "symbol": "PlutoCoin",
-      "address": "0xe801B33366826E54d284D1120d5d6988631506Dd",
-      "final_score": 21.48,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569926
-    },
-    {
-      "symbol": "ROBINDOG",
-      "address": "0x4d371478c5Be5f0e13B59Bf4a6E4e954e6AC3E53",
-      "final_score": 21.0,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569771
-    },
-    {
-      "symbol": "mBTC",
-      "address": "0x40824CbfBBa7c226a443b3EB21225a214142Da32",
-      "final_score": 20.81,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570025
-    },
-    {
-      "symbol": "Tendieman",
-      "address": "0x855331A2f182796C85C1E63228da72060f37c5F0",
-      "final_score": 20.8,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569608
-    },
-    {
-      "symbol": "FLIP",
-      "address": "0xB82E47A04f0F337004908bd67fAF8ceb2f7651a5",
-      "final_score": 20.54,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569801
-    },
-    {
-      "symbol": "LEGS",
-      "address": "0x8FcF98e1348D3DDeE46cdD15A5C7D9a8d423077d",
-      "final_score": 20.45,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569721
+      "ts": 1788587074
     },
     {
       "symbol": "PlutoCoin",
       "address": "0x5dc1546Be4a8687815f20C83F8758e7173904034",
-      "final_score": 20.27,
+      "final_score": 37.42,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569947
+      "ts": 1788587094
+    },
+    {
+      "symbol": "69",
+      "address": "0xeb49006e1C70a6a7E248aA23E2F2ae3AeBc81128",
+      "final_score": 35.65,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587361
+    },
+    {
+      "symbol": "Goblin",
+      "address": "0xcD405B55F0185D2D55394cA051Fda69af9036Fce",
+      "final_score": 35.18,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587128
+    },
+    {
+      "symbol": "TROLL",
+      "address": "0x1003Ebf9EE3C44685FF38927c3FdD9a0de9310F6",
+      "final_score": 35.04,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586201
+    },
+    {
+      "symbol": "SOUNDER",
+      "address": "0x4214e44c97865858d78e37d5d4ee3262acf30406",
+      "final_score": 34.13,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586434
+    },
+    {
+      "symbol": "PSDQ",
+      "address": "0x0b8bbBE6C7439E938477f57e8a88598813125Adc",
+      "final_score": 33.88,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586809
+    },
+    {
+      "symbol": "ZZZ",
+      "address": "0x7dbf38976f6D3b9c529e7D9484A71898B409eE6a",
+      "final_score": 33.72,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587342
+    },
+    {
+      "symbol": "LAPTOP",
+      "address": "0x64412f58a8488e2302c99f603085E83F9FA09C18",
+      "final_score": 33.43,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586820
+    },
+    {
+      "symbol": "ROBINDOG",
+      "address": "0x4d371478c5Be5f0e13B59Bf4a6E4e954e6AC3E53",
+      "final_score": 33.17,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586766
+    },
+    {
+      "symbol": "CATSTRO",
+      "address": "0x3FF3EC76d48875c4dbE3d20071e6085B4bcc4304",
+      "final_score": 33.15,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587373
+    },
+    {
+      "symbol": "CATSTRO",
+      "address": "0x157a752f3446fe891d6e2881006813703fbb3ad9",
+      "final_score": 33.04,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587405
+    },
+    {
+      "symbol": "Mobi",
+      "address": "0xA07deFcF04db6745dD606Ef65730856d994a406A",
+      "final_score": 32.17,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587401
+    },
+    {
+      "symbol": "NEST",
+      "address": "0x8e859dbdfbfd2df6a99870e2871eaa58e8784e05",
+      "final_score": 32.16,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587390
+    },
+    {
+      "symbol": "GLDR",
+      "address": "0x46Bd9f1276234651D9Be3Ade250203C2094E1e18",
+      "final_score": 32.11,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587321
+    },
+    {
+      "symbol": "ALPACA",
+      "address": "0xad9d2833277dcb4da7491595ee6f0770fcf2c546",
+      "final_score": 31.44,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587147
+    },
+    {
+      "symbol": "CATSTRO",
+      "address": "0x70d4217cfb3d1601545f5e38a9a5f6bf98c1fd62",
+      "final_score": 31.08,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587379
+    },
+    {
+      "symbol": "Tendieman",
+      "address": "0x855331A2f182796C85C1E63228da72060f37c5F0",
+      "final_score": 30.96,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586232
+    },
+    {
+      "symbol": "BOOMER",
+      "address": "0x73c2dE14C7FA0a57cc2d9722b959eA70B881fFe4",
+      "final_score": 30.76,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586787
     },
     {
       "symbol": "PEPTI",
       "address": "0xF0f34BE7db8aC358050c1B077Dc67fc9D4EbD0EA",
-      "final_score": 19.82,
+      "final_score": 30.72,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570039
+      "ts": 1788587278
     },
     {
-      "symbol": "TAO",
-      "address": "0xf3081494B87e8D5fb7960f066E931D1D0e6E3d67",
-      "final_score": 19.77,
+      "symbol": "PRSA",
+      "address": "0x17447b96fCa558003634b838484299B5aA9BC6d6",
+      "final_score": 30.56,
       "recommended": 0,
-      "flags": "one_sided_buy_pressure,high_top10_concentration",
-      "ts": 1788569755
+      "flags": "high_top10_concentration",
+      "ts": 1788586460
+    },
+    {
+      "symbol": "PEDOBEAR",
+      "address": "0x63b38EE28467F9E815B9E2F0A5ca9A708A049F46",
+      "final_score": 30.27,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587386
+    },
+    {
+      "symbol": "NOTFLIX",
+      "address": "0xa3817DCd65168c7A5485C1587f99cc98A4627443",
+      "final_score": 30.24,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587235
+    },
+    {
+      "symbol": "FLOW",
+      "address": "0xafe4Ae244f2e585DD9Ae76560eA71cc8C005318f",
+      "final_score": 30.14,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587382
+    },
+    {
+      "symbol": "SROYALE",
+      "address": "0x487Db0958384a805E568267CF995844993F87979",
+      "final_score": 30.08,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587366
+    },
+    {
+      "symbol": "Figure03",
+      "address": "0xB05618FE540d0bE2bd193153dE86A9f84dE0D76A",
+      "final_score": 29.55,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586769
+    },
+    {
+      "symbol": "QGRID",
+      "address": "0x7d4727A173aab10d158D6F164B671C92f99d6647",
+      "final_score": 29.13,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586236
+    },
+    {
+      "symbol": "ZEAL",
+      "address": "0x9fA1C5E90A11294F83A9F135b81ad1b537A5FFdC",
+      "final_score": 29.09,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586222
+    },
+    {
+      "symbol": "BALDI",
+      "address": "0xeA191CCBffDD4404B9af93e46Df7b0Ff21745c3B",
+      "final_score": 29.05,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586747
+    },
+    {
+      "symbol": "VLAD",
+      "address": "0x7744971d8f35fdCCa90C50983Cac1dB25e90fEeB",
+      "final_score": 28.95,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587203
+    },
+    {
+      "symbol": "DRILL",
+      "address": "0x9Fa9Eb800b70fe964F55542E0dee2650Da2BA1F2",
+      "final_score": 28.74,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587376
+    },
+    {
+      "symbol": "$LMI",
+      "address": "0x9F60915C9035422F1FCd09970ce6954666656501",
+      "final_score": 28.57,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587394
+    },
+    {
+      "symbol": "CARDS",
+      "address": "0xC6fAfE4d9937e6256EEeBa065DC706aD9cB828a2",
+      "final_score": 28.42,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587209
+    },
+    {
+      "symbol": "GPU",
+      "address": "0xD4F6B393376291fDe5B111E9578FCA109D40967F",
+      "final_score": 28.31,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587100
+    },
+    {
+      "symbol": "LEGS",
+      "address": "0x8FcF98e1348D3DDeE46cdD15A5C7D9a8d423077d",
+      "final_score": 27.63,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586560
+    },
+    {
+      "symbol": "STAQ",
+      "address": "0xB553607D0c418223afFd765143c26Cf327495d06",
+      "final_score": 26.84,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586528
+    },
+    {
+      "symbol": "RIDE",
+      "address": "0x8b3e3BA1A55b939f93F0a205F94520b9468e17f8",
+      "final_score": 26.32,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587175
+    },
+    {
+      "symbol": "ARCADE",
+      "address": "0xA2B0A8f53b7114d12C568D547B496A9fF3541e18",
+      "final_score": 26.31,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586743
+    },
+    {
+      "symbol": "CHANG",
+      "address": "0xCBB3459375F03241a6201A6f42C2dbf3CE441E18",
+      "final_score": 26.19,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586789
+    },
+    {
+      "symbol": "CRCL",
+      "address": "0x51D1aBaB4d1E7B50642A25D3f7B2823067eBF9d7",
+      "final_score": 26.0,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587084
+    },
+    {
+      "symbol": "LUNA9",
+      "address": "0x9663985492af1B339D959A800592ed131090F264",
+      "final_score": 25.75,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587240
+    },
+    {
+      "symbol": "LOUDR",
+      "address": "0xFe9d6a1E492f4abe4f8C2041b283b5a4394A1E18",
+      "final_score": 25.56,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587389
+    },
+    {
+      "symbol": "DEBTCOIN",
+      "address": "0xF99E447A83F5a2fe91272cA350136B0B294E3D0f",
+      "final_score": 25.53,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587212
+    },
+    {
+      "symbol": "STABLECAT",
+      "address": "0x781Ce303f75fa2f1d83fFDBCAA2220153554179f",
+      "final_score": 25.49,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587142
+    },
+    {
+      "symbol": "SPRM",
+      "address": "0x90aB6e4B8FaaF3d5407f253DFF070D222D1Bf10b",
+      "final_score": 25.49,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587319
+    },
+    {
+      "symbol": "CLAY",
+      "address": "0x6E3FDFD69fbE1572AB63b09a3Fb7b47C1912167f",
+      "final_score": 25.48,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586332
+    },
+    {
+      "symbol": "TRIPPY",
+      "address": "0x60d3e8e13cb119b8fc7dd76d5e522ab1912c65fc",
+      "final_score": 25.48,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586441
+    },
+    {
+      "symbol": "HOVER",
+      "address": "0xf7d2A651188EA9f52cc802B3D962eB6c88bfABa3",
+      "final_score": 25.26,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587286
+    },
+    {
+      "symbol": "NAILONG",
+      "address": "0x36b8f67d3439eDb17FC14B5C01505D72AA20F60A",
+      "final_score": 25.24,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587428
+    },
+    {
+      "symbol": "BUBBLE",
+      "address": "0xe6f4225a974b19ee68ed69821d489189b0ae9ba9",
+      "final_score": 25.08,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587273
+    },
+    {
+      "symbol": "FINE",
+      "address": "0x828570E158BA08c6E9F99e03923Cc8232d3155AB",
+      "final_score": 24.98,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586565
+    },
+    {
+      "symbol": "MSTR",
+      "address": "0x99452D7519e103daF9bC9f02311DD164a073A7A2",
+      "final_score": 24.67,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586960
+    },
+    {
+      "symbol": "CRC",
+      "address": "0x446adB118f5F15F2a749E38288D4025b55F3e095",
+      "final_score": 24.65,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587244
+    },
+    {
+      "symbol": "Buck",
+      "address": "0x4f94713e7B25cAB3348119998262A31e3aA79867",
+      "final_score": 23.76,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587304
+    },
+    {
+      "symbol": "FTR",
+      "address": "0x8FBE8e5E6d24D59cf72efC3662995B4cF72314B4",
+      "final_score": 23.73,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587364
+    },
+    {
+      "symbol": "BAREBACK",
+      "address": "0x52c5A76D81A1228A30f70A448E7a804a659f1e18",
+      "final_score": 23.67,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587123
+    },
+    {
+      "symbol": "AARON",
+      "address": "0xED4fbDA09Cb7F5ADD61bd6729D584c6684E81E18",
+      "final_score": 23.14,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587027
+    },
+    {
+      "symbol": "Stocker",
+      "address": "0x1F20837dAf4F566Ba0db16Ceb25F879fB411ab1c",
+      "final_score": 23.05,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587190
+    },
+    {
+      "symbol": "DOOMSCROLL",
+      "address": "0x864dc06bca9d442aeb524b71ba3bbff789a9be8e",
+      "final_score": 23.01,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587217
+    },
+    {
+      "symbol": "PARCAT",
+      "address": "0xF3c5B06CD59c5E2018EA483482eCe29005Cff7Ba",
+      "final_score": 22.96,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587253
+    },
+    {
+      "symbol": "STOCK",
+      "address": "0x4c11ddA6E46b6FB05CbFF870fb09954bfc3457fE",
+      "final_score": 22.75,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587154
+    },
+    {
+      "symbol": "RIM",
+      "address": "0x1dB10D5284b016BE4c3E777C082b15bce5F88495",
+      "final_score": 22.57,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587369
+    },
+    {
+      "symbol": "PONSI",
+      "address": "0x5982f195A5232BDFFc7339EBF4edf59F162efFe9",
+      "final_score": 22.49,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788586996
+    },
+    {
+      "symbol": "7",
+      "address": "0xddab134ba6e54ab5351789ddbbcd3525c80c8665",
+      "final_score": 21.98,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587329
+    },
+    {
+      "symbol": "Mousejak",
+      "address": "0xd5740e1AEC7ae5215292de05387dC4078CbED65F",
+      "final_score": 21.91,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587398
+    },
+    {
+      "symbol": "kuan",
+      "address": "0x59b8b6474d02e28C5961EE4785240AEe9a70dEBE",
+      "final_score": 21.82,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587261
+    },
+    {
+      "symbol": "KPOP",
+      "address": "0xca3ce24FB1a6E7dB0003f9c785405A851E3F1e18",
+      "final_score": 21.55,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587242
+    },
+    {
+      "symbol": "SNCK",
+      "address": "0x3F0eD089bE2a7836D208f19D25F30b5042cB9da7",
+      "final_score": 21.01,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586241
+    },
+    {
+      "symbol": "FOLD",
+      "address": "0x665AB4Ab7B60E6fC2004FbD1b8a17F49D0E71E18",
+      "final_score": 20.7,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586613
+    },
+    {
+      "symbol": "INVESTOR",
+      "address": "0x79840f0d9e7df055b12cf9bb97fd61ba4a9f7b87",
+      "final_score": 20.68,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587187
+    },
+    {
+      "symbol": "AMD",
+      "address": "0x68F8F61897D17ABD10ebC4Eaf483E4c189F51E18",
+      "final_score": 20.59,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587078
+    },
+    {
+      "symbol": "PEN",
+      "address": "0x496A80191AddD80DC7C04728DD57Fc519712250e",
+      "final_score": 20.42,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587195
+    },
+    {
+      "symbol": "JEET",
+      "address": "0xc5CfB1a50a9Fc816B6419B08807D79fE34901E18",
+      "final_score": 20.2,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586287
+    },
+    {
+      "symbol": "CLAWD",
+      "address": "0x423BFf7927D8F668262660853EaA5D05CB7FAE29",
+      "final_score": 20.13,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587163
+    },
+    {
+      "symbol": "BULL",
+      "address": "0x8F8FE20222528BcB040E1ce9FECD60507c23fE01",
+      "final_score": 20.09,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586522
+    },
+    {
+      "symbol": "HOLD",
+      "address": "0x27dEF0EEe4Bf4678d6aBf912D2acc04a8b921E18",
+      "final_score": 19.86,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587432
+    },
+    {
+      "symbol": "DECIST",
+      "address": "0x91109Fc8e6bBF4b6A45381dc26629C8771E51E18",
+      "final_score": 19.69,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587117
     },
     {
       "symbol": "RTD",
@@ -655,39 +663,31 @@
       "final_score": 19.53,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569784
+      "ts": 1788586782
     },
     {
-      "symbol": "MeiMei",
-      "address": "0x28db538133883109f0c2680837c61a18631b428e",
-      "final_score": 19.5,
+      "symbol": "TRAIL",
+      "address": "0x76c64776061cbf3ed3d14356b49bcf064b0ecaf4",
+      "final_score": 19.41,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569682
+      "ts": 1788586590
     },
     {
-      "symbol": "PIPO",
-      "address": "0x5ec7e1891ddbaa9ac23fc06b35b1cb50898a7825",
-      "final_score": 19.49,
+      "symbol": "SLINK",
+      "address": "0x6BE7f3dA0809DcEe41de05003391149338ac2f3D",
+      "final_score": 19.29,
       "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569821
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587259
     },
     {
-      "symbol": "GPU",
-      "address": "0xD4F6B393376291fDe5B111E9578FCA109D40967F",
-      "final_score": 19.42,
+      "symbol": "7",
+      "address": "0x9701c852d98795d03b149a9c94737b0c0aaedda1",
+      "final_score": 19.22,
       "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569949
-    },
-    {
-      "symbol": "BE",
-      "address": "0x7981992155389b44c17e08422749d77023Be2ba3",
-      "final_score": 19.2,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569685
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587206
     },
     {
       "symbol": "DOGGYCOIN",
@@ -695,55 +695,31 @@
       "final_score": 19.19,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569725
+      "ts": 1788586569
     },
     {
-      "symbol": "MEMESTOCKS",
-      "address": "0x58905Ada30e4541022b56B85C83Be2e2BcB8f247",
-      "final_score": 19.14,
+      "symbol": "POST",
+      "address": "0xC638902C815c6e3d20708C06c467e53bEC115713",
+      "final_score": 18.88,
       "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569936
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587197
     },
     {
-      "symbol": "ORGA",
-      "address": "0xAeb3eCeca97D662AA8F63d427370554aB56a56e3",
-      "final_score": 19.02,
+      "symbol": "FLIP",
+      "address": "0xB82E47A04f0F337004908bd67fAF8ceb2f7651a5",
+      "final_score": 18.75,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569589
+      "ts": 1788586794
     },
     {
-      "symbol": "BALDI",
-      "address": "0xeA191CCBffDD4404B9af93e46Df7b0Ff21745c3B",
-      "final_score": 18.98,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569753
-    },
-    {
-      "symbol": "MEH",
-      "address": "0x36B6711Be94Aa5dCD7DdD528D14DBE33043659B0",
-      "final_score": 18.98,
+      "symbol": "PUPS",
+      "address": "0x0C107Fe1F22395B0aE206af6CA9d7075F12502c2",
+      "final_score": 18.73,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570080
-    },
-    {
-      "symbol": "QUOTA",
-      "address": "0x50ac4a09c6764b69f0132e283b059c8ab1374b36",
-      "final_score": 18.84,
-      "recommended": 0,
-      "flags": "one_sided_buy_pressure,high_top10_concentration",
-      "ts": 1788569968
-    },
-    {
-      "symbol": "BULL",
-      "address": "0x8F8FE20222528BcB040E1ce9FECD60507c23fE01",
-      "final_score": 18.69,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569703
+      "ts": 1788587181
     },
     {
       "symbol": "GREEN",
@@ -751,159 +727,175 @@
       "final_score": 18.67,
       "recommended": 0,
       "flags": "",
-      "ts": 1788555613
+      "ts": 1788586275
     },
     {
-      "symbol": "STOCK",
-      "address": "0x4c11ddA6E46b6FB05CbFF870fb09954bfc3457fE",
-      "final_score": 18.53,
+      "symbol": "SHROOM",
+      "address": "0x44C9E8257B2bcD5009cE490F3C27A159f637e7F8",
+      "final_score": 18.54,
       "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569964
-    },
-    {
-      "symbol": "PUPS",
-      "address": "0x0C107Fe1F22395B0aE206af6CA9d7075F12502c2",
-      "final_score": 18.51,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569971
-    },
-    {
-      "symbol": "GME",
-      "address": "0x8606205b32905faD1E8427CbB6fb0A501693d7aD",
-      "final_score": 18.34,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569874
-    },
-    {
-      "symbol": "HOODWARS",
-      "address": "0x06E0284edfd5CEdC77e2589FdCDEEd3e57f21E18",
-      "final_score": 18.11,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569606
-    },
-    {
-      "symbol": "DATA",
-      "address": "0xcCb835cbeA2a26870660Ce314F7DEDf4412F0308",
-      "final_score": 17.89,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569898
-    },
-    {
-      "symbol": "VLAD",
-      "address": "0x7744971d8f35fdCCa90C50983Cac1dB25e90fEeB",
-      "final_score": 17.89,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569990
-    },
-    {
-      "symbol": "AMD",
-      "address": "0x68F8F61897D17ABD10ebC4Eaf483E4c189F51E18",
-      "final_score": 17.65,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569941
+      "flags": "",
+      "ts": 1788586428
     },
     {
       "symbol": "SELFIE",
       "address": "0xdE3468D1d52f550eD2de940831629E0C5fde1e18",
-      "final_score": 17.59,
+      "final_score": 18.46,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569938
+      "ts": 1788587068
     },
     {
-      "symbol": "PARS",
-      "address": "0xB7667B14272304Ffe35e5d40726c6D66b6Fc4ca2",
-      "final_score": 17.59,
+      "symbol": "SQDX",
+      "address": "0x7509E992b968b49C64990E4c9010cc7e9F03e717",
+      "final_score": 18.43,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587289
+    },
+    {
+      "symbol": "JEWWIFHAT",
+      "address": "0x428f3360EcABab0B8FAfa773FF4E3a2936831E18",
+      "final_score": 18.35,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587237
+    },
+    {
+      "symbol": "COMPUTE",
+      "address": "0xe608850d6f3a9a184c3c8fc46eaecdc24bfa1d65",
+      "final_score": 18.16,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570078
+      "ts": 1788586480
     },
     {
-      "symbol": "thatguy",
-      "address": "0x25Ff0C6B7042cc0f541Effdd354457Cb52cfF609",
-      "final_score": 17.5,
+      "symbol": "HODL",
+      "address": "0xd65e8A7743735Cd9b61F281906D36384E155c29e",
+      "final_score": 18.13,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569694
+      "ts": 1788586580
     },
     {
-      "symbol": "JEET",
-      "address": "0xc5CfB1a50a9Fc816B6419B08807D79fE34901E18",
-      "final_score": 17.49,
+      "symbol": "MEMEFLIX",
+      "address": "0xBb6eC1e12a2d36B0b31D4E155BfAB92b2C69B3d4",
+      "final_score": 17.95,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587263
+    },
+    {
+      "symbol": "A",
+      "address": "0x05D73A652529f0b1a6Dd2B89dE26b449eC9F1e18",
+      "final_score": 17.83,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586383
+    },
+    {
+      "symbol": "QUOTA",
+      "address": "0x50ac4a09c6764b69f0132e283b059c8ab1374b36",
+      "final_score": 17.76,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587168
+    },
+    {
+      "symbol": "CRC",
+      "address": "0x909f6b1992b1b54f19b89c86f601C80C6Dae4555",
+      "final_score": 17.73,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569636
+      "ts": 1788587214
+    },
+    {
+      "symbol": "MAXXING",
+      "address": "0x89867bFC1CA389f656097838B307664a5063Cbf6",
+      "final_score": 17.63,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586298
+    },
+    {
+      "symbol": "INCOME",
+      "address": "0x15b8af231b3c5d0b052c93624cc4d1b2bf35b790",
+      "final_score": 17.51,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586252
+    },
+    {
+      "symbol": "MeiMei",
+      "address": "0x28db538133883109f0c2680837c61a18631b428e",
+      "final_score": 17.4,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586467
+    },
+    {
+      "symbol": "PAIRED",
+      "address": "0x533288775CcF0c43F035A5A7820f63627A3781e8",
+      "final_score": 17.29,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587334
+    },
+    {
+      "symbol": "ELONGATE",
+      "address": "0xa9D63206B3E9630B567068fDb6dD88A24E5C1E18",
+      "final_score": 17.25,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587326
+    },
+    {
+      "symbol": "FOLIO",
+      "address": "0x292186d266e249c80F5dbD760636564C3f3D5818",
+      "final_score": 17.21,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587192
+    },
+    {
+      "symbol": "GWIM",
+      "address": "0x601714835Cd6887277C2C0719D0C2b73f39B4663",
+      "final_score": 17.11,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587424
+    },
+    {
+      "symbol": "DATA",
+      "address": "0xcCb835cbeA2a26870660Ce314F7DEDf4412F0308",
+      "final_score": 17.09,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586973
     },
     {
       "symbol": "PONI",
       "address": "0x798579d7D5698b3DDfc2AC5719941af84061c7Af",
-      "final_score": 17.36,
+      "final_score": 17.02,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569698
+      "ts": 1788586509
     },
     {
-      "symbol": "PEN",
-      "address": "0x496A80191AddD80DC7C04728DD57Fc519712250e",
-      "final_score": 17.27,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569985
-    },
-    {
-      "symbol": "QGRID",
-      "address": "0x7d4727A173aab10d158D6F164B671C92f99d6647",
-      "final_score": 17.17,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569609
-    },
-    {
-      "symbol": "DECIST",
-      "address": "0x91109Fc8e6bBF4b6A45381dc26629C8771E51E18",
-      "final_score": 17.14,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569954
-    },
-    {
-      "symbol": "CHWY",
-      "address": "0xfe5fee1e942c1c49d4ef770b5547ce6cce9e109f",
-      "final_score": 16.95,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569877
-    },
-    {
-      "symbol": "FRAMON",
-      "address": "0xe4F44D4444385B199d65bDBaac486DcAA12E1E18",
-      "final_score": 16.93,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570031
-    },
-    {
-      "symbol": "SURF",
-      "address": "0x4bbb8bfa18e8fe517a148ec04adac95918aca1f0",
+      "symbol": "mBTC",
+      "address": "0x40824CbfBBa7c226a443b3EB21225a214142Da32",
       "final_score": 16.9,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569597
+      "ts": 1788587257
     },
     {
-      "symbol": "CATMAN",
-      "address": "0x183F13CE0C7076F2aB8B6093Da89163658C1EfD2",
+      "symbol": "gatcha",
+      "address": "0x8F21138Afcbe82E12061fD02630BB488d7585Fd8",
       "final_score": 16.77,
       "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569749
+      "flags": "high_top10_concentration",
+      "ts": 1788586545
     },
     {
       "symbol": "Pixel Cat",
@@ -911,15 +903,39 @@
       "final_score": 16.74,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569622
+      "ts": 1788586259
     },
     {
-      "symbol": "faces",
-      "address": "0x11210ddb87c4bb1a6d66823dee8e74a87424d395",
+      "symbol": "SIRIUS",
+      "address": "0xBaFCEC4E4fA6D0f7b82DA6e47e62204955B71E76",
+      "final_score": 16.71,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586485
+    },
+    {
+      "symbol": "CATMAN",
+      "address": "0x183F13CE0C7076F2aB8B6093Da89163658C1EfD2",
+      "final_score": 16.7,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586741
+    },
+    {
+      "symbol": "SURF",
+      "address": "0x4bbb8bfa18e8fe517a148ec04adac95918aca1f0",
+      "final_score": 16.61,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586212
+    },
+    {
+      "symbol": "PEPE",
+      "address": "0x637dd7000cf862ff2478a8c3b40d650c4e84ba94",
       "final_score": 16.6,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569701
+      "ts": 1788586265
     },
     {
       "symbol": "DIVIDEND",
@@ -927,7 +943,15 @@
       "final_score": 16.58,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569903
+      "ts": 1788586982
+    },
+    {
+      "symbol": "ARROW",
+      "address": "0xbc9dD6E9eBaFDb4B1c770F7EeE53798Bb0903C30",
+      "final_score": 16.57,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587200
     },
     {
       "symbol": "eelonmusk",
@@ -935,15 +959,7 @@
       "final_score": 16.56,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569692
-    },
-    {
-      "symbol": "SNOOFI",
-      "address": "0xc0e95d3ebf4408aa0df5083ea910e97f55768104",
-      "final_score": 16.56,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569747
+      "ts": 1788586491
     },
     {
       "symbol": "KUBIK",
@@ -951,23 +967,47 @@
       "final_score": 16.56,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569852
+      "ts": 1788586919
     },
     {
-      "symbol": "DUH",
-      "address": "0x806103BFbF5D3DCA1A15D62A5e3D3eDa823aA4E2",
-      "final_score": 16.55,
+      "symbol": "PlutoCoin",
+      "address": "0xe801B33366826E54d284D1120d5d6988631506Dd",
+      "final_score": 16.56,
       "recommended": 0,
-      "flags": "",
-      "ts": 1788569937
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587007
     },
     {
-      "symbol": "AOL",
-      "address": "0x73F528Eaa7d65Abea39097Df57877f2Fe625Ab34",
-      "final_score": 16.5,
+      "symbol": "BWAB",
+      "address": "0x018f5d947614656f249081efaeceb9d5a0123c64",
+      "final_score": 16.54,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788555790
+      "ts": 1788586599
+    },
+    {
+      "symbol": "SNOOFI",
+      "address": "0xc0e95d3ebf4408aa0df5083ea910e97f55768104",
+      "final_score": 16.52,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586719
+    },
+    {
+      "symbol": "PIPO",
+      "address": "0x5ec7e1891ddbaa9ac23fc06b35b1cb50898a7825",
+      "final_score": 16.51,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788586840
+    },
+    {
+      "symbol": "Gat ciberp",
+      "address": "0xC0c82cC308e493A3B966b87B9F9862b6CE84068f",
+      "final_score": 16.51,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586934
     },
     {
       "symbol": "MARK",
@@ -978,116 +1018,204 @@
       "ts": 1788563563
     },
     {
+      "symbol": "GOONCOIN",
+      "address": "0xaeeec8c7a7be109db246742051ced3a9e8e260bc",
+      "final_score": 16.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586424
+    },
+    {
+      "symbol": "TAO",
+      "address": "0xf3081494B87e8D5fb7960f066E931D1D0e6E3d67",
+      "final_score": 16.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586750
+    },
+    {
       "symbol": "ROYALTY",
       "address": "0x729B80a734301400640F34def5F4dCD4F77af026",
       "final_score": 16.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569761
+      "ts": 1788586758
     },
     {
-      "symbol": "ARC",
-      "address": "0xa988699DBB9eB4E35651A0F2a4CD3231118edc32",
-      "final_score": 16.47,
+      "symbol": "MSM",
+      "address": "0xD489aB742A5b9C1258adEfcbA8c35C51F1444e64",
+      "final_score": 16.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569600
+      "ts": 1788586791
     },
     {
-      "symbol": "AMCN",
-      "address": "0xfA22044134d988f07E92447AB73b29Fa43287B49",
-      "final_score": 16.46,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569932
-    },
-    {
-      "symbol": "BWAB",
-      "address": "0x018f5d947614656f249081efaeceb9d5a0123c64",
-      "final_score": 16.4,
+      "symbol": "OLY",
+      "address": "0x8E8266b11eAFf21998b31c5aD258198e103e1fB0",
+      "final_score": 16.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569733
-    },
-    {
-      "symbol": "DEBTCOIN",
-      "address": "0xF99E447A83F5a2fe91272cA350136B0B294E3D0f",
-      "final_score": 16.33,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569995
+      "ts": 1788587359
     },
     {
       "symbol": "ADV",
       "address": "0xfce84fa787f073d64bf2c0f6b12f53c900f24257",
-      "final_score": 16.25,
+      "final_score": 16.47,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569737
+      "ts": 1788586609
     },
     {
-      "symbol": "CLAY",
-      "address": "0x6E3FDFD69fbE1572AB63b09a3Fb7b47C1912167f",
-      "final_score": 16.18,
+      "symbol": "WOJAK",
+      "address": "0x11F3F09e8dD478296F759f1b51217b7506B8D091",
+      "final_score": 16.46,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569646
+      "ts": 1788586554
+    },
+    {
+      "symbol": "HOOKED",
+      "address": "0x33fE46bDE7057ca3c1242346933F5d1862B06191",
+      "final_score": 16.42,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586753
+    },
+    {
+      "symbol": "SQUEEZE",
+      "address": "0x67C9E77BEe8cE5250Fc0dbdb38FC89338Eb87B32",
+      "final_score": 16.42,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587270
+    },
+    {
+      "symbol": "ARC",
+      "address": "0xa988699DBB9eB4E35651A0F2a4CD3231118edc32",
+      "final_score": 16.4,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586216
+    },
+    {
+      "symbol": "GME",
+      "address": "0x8606205b32905faD1E8427CbB6fb0A501693d7aD",
+      "final_score": 16.31,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586941
+    },
+    {
+      "symbol": "PLTR",
+      "address": "0xB7599339574488677157BdCC1D9c6D598485e507",
+      "final_score": 16.24,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586246
+    },
+    {
+      "symbol": "ZXPAD",
+      "address": "0x485BA39Dc4da8D09ad8e736785b44661188aE1ca",
+      "final_score": 16.23,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586925
+    },
+    {
+      "symbol": "CLAWDE",
+      "address": "0xf5cb4837284ca06c65c09fcef84ea889bb358df3",
+      "final_score": 16.15,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587339
     },
     {
       "symbol": "za",
       "address": "0x4C255A63f85128bb1b5cCfd676c92f8211eF22e2",
-      "final_score": 16.03,
+      "final_score": 16.12,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570021
+      "ts": 1788587251
     },
     {
-      "symbol": "MIAO",
-      "address": "0xF139f7f7f9C99cbE9cD96D4fcfa6a8f23390Dafc",
-      "final_score": 15.96,
+      "symbol": "BITCAT",
+      "address": "0x0281313f80e3aa465179FE02c31C4F3CEa2eF9B3",
+      "final_score": 16.04,
       "recommended": 0,
       "flags": "",
-      "ts": 1788569935
+      "ts": 1788586702
     },
     {
-      "symbol": "ARROW",
-      "address": "0xbc9dD6E9eBaFDb4B1c770F7EeE53798Bb0903C30",
-      "final_score": 15.86,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569988
-    },
-    {
-      "symbol": "SNOWBALL",
-      "address": "0xBa45AE83F353939451810450aC3a42C5Bc169422",
-      "final_score": 15.84,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569997
-    },
-    {
-      "symbol": "COMPUTE",
-      "address": "0xe608850d6f3a9a184c3c8fc46eaecdc24bfa1d65",
-      "final_score": 15.66,
+      "symbol": "BROCA",
+      "address": "0x18c93a38bca943f300469767e8fea72e5b8ebd73",
+      "final_score": 16.02,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569687
+      "ts": 1788586419
     },
     {
-      "symbol": "AARON",
-      "address": "0xED4fbDA09Cb7F5ADD61bd6729D584c6684E81E18",
-      "final_score": 15.63,
+      "symbol": "faces",
+      "address": "0x11210ddb87c4bb1a6d66823dee8e74a87424d395",
+      "final_score": 16.02,
       "recommended": 0,
-      "flags": "",
-      "ts": 1788569933
+      "flags": "high_top10_concentration",
+      "ts": 1788586515
+    },
+    {
+      "symbol": "thatguy",
+      "address": "0x25Ff0C6B7042cc0f541Effdd354457Cb52cfF609",
+      "final_score": 15.94,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586496
+    },
+    {
+      "symbol": "WKND",
+      "address": "0xcDA698F08Cc21A2246B442968166Cc426c581e18",
+      "final_score": 15.94,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587247
     },
     {
       "symbol": "SILVERBACK",
       "address": "0x3d7341A260A2EE460C9D68E302C2E0C883487039",
-      "final_score": 15.62,
+      "final_score": 15.9,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569642
+      "ts": 1788586316
+    },
+    {
+      "symbol": "FRAMON",
+      "address": "0xe4F44D4444385B199d65bDBaac486DcAA12E1E18",
+      "final_score": 15.88,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587266
+    },
+    {
+      "symbol": "DIESEL",
+      "address": "0xED44A1B434d59B8c4F162D67A43eB198d4C64CB6",
+      "final_score": 15.86,
+      "recommended": 0,
+      "flags": "one_sided_buy_pressure,high_top10_concentration",
+      "ts": 1788587344
+    },
+    {
+      "symbol": "NVDA",
+      "address": "0xaf3ce2968d46c2cc54d89d8d4ec88f94313f74e3",
+      "final_score": 15.73,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586908
+    },
+    {
+      "symbol": "BE",
+      "address": "0x7981992155389b44c17e08422749d77023Be2ba3",
+      "final_score": 15.63,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586472
     },
     {
       "symbol": "U+1F917.",
@@ -1098,124 +1226,68 @@
       "ts": 1788569743
     },
     {
-      "symbol": "kuan",
-      "address": "0x59b8b6474d02e28C5961EE4785240AEe9a70dEBE",
-      "final_score": 15.58,
+      "symbol": "CLICK",
+      "address": "0xD4d8BD15864DF1c70779C355B3ede78e915264AE",
+      "final_score": 15.33,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570028
-    },
-    {
-      "symbol": "FOLIO",
-      "address": "0x292186d266e249c80F5dbD760636564C3f3D5818",
-      "final_score": 15.54,
-      "recommended": 0,
-      "flags": "one_sided_buy_pressure,implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569983
-    },
-    {
-      "symbol": "CLAWD",
-      "address": "0x423BFf7927D8F668262660853EaA5D05CB7FAE29",
-      "final_score": 15.39,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569967
-    },
-    {
-      "symbol": "PLTR",
-      "address": "0xB7599339574488677157BdCC1D9c6D598485e507",
-      "final_score": 15.28,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569615
-    },
-    {
-      "symbol": "DYOR",
-      "address": "0x22B1a8259b65ad972300cd34Fc420D2f33c4093C",
-      "final_score": 15.19,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569633
-    },
-    {
-      "symbol": "BIG",
-      "address": "0x9c183d1D4937000cC6daC9d246f66D4adc7a9EB7",
-      "final_score": 15.09,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569711
-    },
-    {
-      "symbol": "WKND",
-      "address": "0xcDA698F08Cc21A2246B442968166Cc426c581e18",
-      "final_score": 14.98,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570018
+      "ts": 1788587249
     },
     {
       "symbol": null,
       "address": "0x33cb643835d74b85c6f47ef0f3095458081f015f",
-      "final_score": 14.95,
+      "final_score": 15.03,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570046
+      "ts": 1788587291
     },
     {
-      "symbol": "SQDX",
-      "address": "0x7509E992b968b49C64990E4c9010cc7e9F03e717",
-      "final_score": 14.57,
+      "symbol": "AMCN",
+      "address": "0xfA22044134d988f07E92447AB73b29Fa43287B49",
+      "final_score": 15.0,
       "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570045
+      "flags": "",
+      "ts": 1788587017
     },
     {
-      "symbol": "JEWWIFHAT",
-      "address": "0x428f3360EcABab0B8FAfa773FF4E3a2936831E18",
-      "final_score": 14.53,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570011
-    },
-    {
-      "symbol": "MSM",
-      "address": "0xD489aB742A5b9C1258adEfcbA8c35C51F1444e64",
-      "final_score": 14.49,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569796
-    },
-    {
-      "symbol": "HARRISON",
-      "address": "0x1bd5144ffeea7e9759d988b1a0E414276cC87Dcf",
-      "final_score": 14.44,
+      "symbol": "WRESTLER",
+      "address": "0xaB528169DCC80d68837a33b1e2b866bB7D7EE301",
+      "final_score": 14.87,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788570004
+      "ts": 1788586454
     },
     {
-      "symbol": "FINE",
-      "address": "0x828570E158BA08c6E9F99e03923Cc8232d3155AB",
-      "final_score": 14.34,
+      "symbol": "RHJ",
+      "address": "0xF7E8a7C50eEf98EabeED5BDd71E22c96C300E33D",
+      "final_score": 14.86,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569723
+      "ts": 1788586938
     },
     {
-      "symbol": "adum",
-      "address": "0x5e857cb15616B907db0999940EF76A2Ce6061E18",
-      "final_score": 13.92,
+      "symbol": "ROBIN",
+      "address": "0x5e95162FBee5DE0a3c866d4C4D432F7e6270d7f0",
+      "final_score": 14.63,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569847
+      "ts": 1788587417
     },
     {
-      "symbol": "AMC",
-      "address": "0x64eE81557B0A4fd8aC2Ef80b1030C0E5F43f1501",
-      "final_score": 13.87,
+      "symbol": "SNOWBALL",
+      "address": "0xBa45AE83F353939451810450aC3a42C5Bc169422",
+      "final_score": 14.31,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569833
+      "ts": 1788587215
+    },
+    {
+      "symbol": "shuvon",
+      "address": "0x99A496a30E8921DFB4212D771F262c43c532c2cC",
+      "final_score": 14.04,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587308
     },
     {
       "symbol": null,
@@ -1223,47 +1295,31 @@
       "final_score": 13.84,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569767
+      "ts": 1788586763
     },
     {
-      "symbol": "CRC",
-      "address": "0x909f6b1992b1b54f19b89c86f601C80C6Dae4555",
-      "final_score": 13.73,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569996
-    },
-    {
-      "symbol": "DOOMSCROLL",
-      "address": "0x864dc06bca9d442aeb524b71ba3bbff789a9be8e",
-      "final_score": 13.65,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569999
-    },
-    {
-      "symbol": "WOJAK",
-      "address": "0x11F3F09e8dD478296F759f1b51217b7506B8D091",
-      "final_score": 13.61,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569718
-    },
-    {
-      "symbol": "AIBONER",
-      "address": "0x52B068794B46641860B05e45cB8311E21Dd12E02",
-      "final_score": 13.52,
-      "recommended": 0,
-      "flags": "one_sided_buy_pressure,high_top10_concentration",
-      "ts": 1788569966
-    },
-    {
-      "symbol": "POST",
-      "address": "0xC638902C815c6e3d20708C06c467e53bEC115713",
-      "final_score": 13.4,
+      "symbol": "concern",
+      "address": "0xf5F5F51C4ab83C303c4fAD5b6A0838E106eF1e18",
+      "final_score": 13.36,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569987
+      "ts": 1788586935
+    },
+    {
+      "symbol": "CHWY",
+      "address": "0xfe5fee1e942c1c49d4ef770b5547ce6cce9e109f",
+      "final_score": 13.22,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586946
+    },
+    {
+      "symbol": "LOCKIN",
+      "address": "0x1ae60a822d041013a24020943393cddd7c5ddbb5",
+      "final_score": 13.11,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587421
     },
     {
       "symbol": "DRAW",
@@ -1271,63 +1327,87 @@
       "final_score": 13.1,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569497
+      "ts": 1788586189
     },
     {
       "symbol": null,
       "address": "0x92e43fd417a12f9633446fb40c8aa5265c2659b3",
-      "final_score": 13.04,
+      "final_score": 12.93,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569674
+      "ts": 1788586446
     },
     {
-      "symbol": null,
-      "address": "0xa08b9ea6BB6272624bD83794464709bD19bAe5aa",
-      "final_score": 12.84,
+      "symbol": "biohacking",
+      "address": "0x67C61Bfb169ce68A61EF28E4CE9D7f53EFBd1e18",
+      "final_score": 12.92,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569974
+      "ts": 1788586197
     },
     {
-      "symbol": "CATFISH",
-      "address": "0x5fC50af22065727ca4aafd32f4908cf53b400CE8",
-      "final_score": 12.76,
+      "symbol": "18932",
+      "address": "0xb613a657454b9d39e04839A9f10e1b224FbB86A6",
+      "final_score": 12.73,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587044
+    },
+    {
+      "symbol": "USDG",
+      "address": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+      "final_score": 12.73,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569932
+      "ts": 1788587268
     },
     {
       "symbol": null,
       "address": "0xdb02f96dc708bf6c53e4c1ab1f790857bd74806d",
-      "final_score": 12.74,
+      "final_score": 12.64,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569951
+      "ts": 1788587106
+    },
+    {
+      "symbol": "BIG",
+      "address": "0x9c183d1D4937000cC6daC9d246f66D4adc7a9EB7",
+      "final_score": 12.61,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586539
     },
     {
       "symbol": null,
       "address": "0xb90f3cce76ee17975c974da51ab24cf90f8dfbb3",
-      "final_score": 12.59,
+      "final_score": 12.55,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569830
+      "ts": 1788586872
+    },
+    {
+      "symbol": "HARRISON",
+      "address": "0x1bd5144ffeea7e9759d988b1a0E414276cC87Dcf",
+      "final_score": 12.51,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587228
     },
     {
       "symbol": "ROBIN",
       "address": "0x31359C4eFaa272C78fC1e08F49d9A59dc510aEbA",
-      "final_score": 12.54,
+      "final_score": 12.51,
       "recommended": 0,
-      "flags": "one_sided_buy_pressure,high_top10_concentration",
-      "ts": 1788570076
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587348
     },
     {
       "symbol": null,
       "address": "0xe4b167e9cd1d8753ce709287aa19dd0f09ed2592",
       "final_score": 12.5,
       "recommended": 0,
-      "flags": "",
-      "ts": 1788569508
+      "flags": "high_top10_concentration",
+      "ts": 1788586192
     },
     {
       "symbol": null,
@@ -1335,7 +1415,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569628
+      "ts": 1788586270
     },
     {
       "symbol": null,
@@ -1343,15 +1423,15 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569650
+      "ts": 1788586392
     },
     {
-      "symbol": "GOONCOIN",
-      "address": "0xaeeec8c7a7be109db246742051ced3a9e8e260bc",
+      "symbol": "AOL",
+      "address": "0x73F528Eaa7d65Abea39097Df57877f2Fe625Ab34",
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569664
+      "ts": 1788586532
     },
     {
       "symbol": null,
@@ -1359,7 +1439,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569741
+      "ts": 1788586626
     },
     {
       "symbol": null,
@@ -1367,7 +1447,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569781
+      "ts": 1788586780
     },
     {
       "symbol": null,
@@ -1375,7 +1455,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569836
+      "ts": 1788586894
     },
     {
       "symbol": null,
@@ -1383,7 +1463,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569841
+      "ts": 1788586904
     },
     {
       "symbol": null,
@@ -1391,7 +1471,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569859
+      "ts": 1788586930
     },
     {
       "symbol": null,
@@ -1399,7 +1479,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569881
+      "ts": 1788586950
     },
     {
       "symbol": null,
@@ -1407,23 +1487,7 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569911
-    },
-    {
-      "symbol": null,
-      "address": "0x7b25a084290df6efe5a612ee7154331cc106d72d",
-      "final_score": 12.5,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569933
-    },
-    {
-      "symbol": null,
-      "address": "0x6afc1f1d7cc7383cb9ec8845fe8f5786994980ee",
-      "final_score": 12.5,
-      "recommended": 0,
-      "flags": "",
-      "ts": 1788569934
+      "ts": 1788586988
     },
     {
       "symbol": null,
@@ -1431,39 +1495,127 @@
       "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569953
+      "ts": 1788587112
     },
     {
-      "symbol": "ARCADE",
-      "address": "0xA2B0A8f53b7114d12C568D547B496A9fF3541e18",
-      "final_score": 12.18,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569751
-    },
-    {
-      "symbol": "FOLD",
-      "address": "0x665AB4Ab7B60E6fC2004FbD1b8a17F49D0E71E18",
-      "final_score": 11.64,
+      "symbol": null,
+      "address": "0x006ab13edc08e4d21885fd01c490d8c682cbccf0",
+      "final_score": 12.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569738
+      "ts": 1788587134
     },
     {
-      "symbol": "PENNY",
-      "address": "0x4124277673E3ecaaF4AaDc5C6169cf1D7812d647",
-      "final_score": 11.51,
+      "symbol": null,
+      "address": "0xd689c16c22ddd8a5251b1351cccac6fc74d67fcd",
+      "final_score": 12.5,
       "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569976
+      "flags": "",
+      "ts": 1788587182
+    },
+    {
+      "symbol": null,
+      "address": "0xa08b9ea6BB6272624bD83794464709bD19bAe5aa",
+      "final_score": 12.5,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587182
+    },
+    {
+      "symbol": "AIBONER",
+      "address": "0x52B068794B46641860B05e45cB8311E21Dd12E02",
+      "final_score": 12.41,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587159
     },
     {
       "symbol": "DOGE",
       "address": "0x957de1188EC592Fd851C907baE0fDA472351B77e",
-      "final_score": 11.34,
+      "final_score": 12.03,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570024
+      "ts": 1788587255
+    },
+    {
+      "symbol": "NIGGA",
+      "address": "0x938dD92943663d869C40A96900C1EB807A79c8Ca",
+      "final_score": 11.42,
+      "recommended": 0,
+      "flags": "one_sided_buy_pressure,implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587059
+    },
+    {
+      "symbol": "NATION",
+      "address": "0xc839A88A05B231515a82c71EE97b4F18973C1340",
+      "final_score": 11.42,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587233
+    },
+    {
+      "symbol": "HARD",
+      "address": "0xBa471F0248bCa5D3e5184dEB8007f4223298b278",
+      "final_score": 11.18,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586777
+    },
+    {
+      "symbol": "CASH",
+      "address": "0x39eAb8a4e0025A647B663eC61696501DB206DA8e",
+      "final_score": 11.09,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587316
+    },
+    {
+      "symbol": "MO",
+      "address": "0xDc87320710042Bfe18d85741B61Bc2c2487e7048",
+      "final_score": 11.02,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587001
+    },
+    {
+      "symbol": "MEMESTOCKS",
+      "address": "0x58905Ada30e4541022b56B85C83Be2e2BcB8f247",
+      "final_score": 10.72,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587053
+    },
+    {
+      "symbol": "CIRCLEJERK",
+      "address": "0x5614587115C01fA7123861C52c80831ef5DBDbDb",
+      "final_score": 10.65,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587039
+    },
+    {
+      "symbol": "HOODWARS",
+      "address": "0x06E0284edfd5CEdC77e2589FdCDEEd3e57f21E18",
+      "final_score": 10.59,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586227
+    },
+    {
+      "symbol": "LONGBOW",
+      "address": "0x587Be69569AE1f1647264D06717A85B106CC1E18",
+      "final_score": 10.57,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586550
+    },
+    {
+      "symbol": "LU",
+      "address": "0xd212EC0Ea53b60bb8FA786a61FdbDDD406c6e00C",
+      "final_score": 10.57,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586761
     },
     {
       "symbol": "BATMAM",
@@ -1471,7 +1623,15 @@
       "final_score": 10.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569726
+      "ts": 1788586573
+    },
+    {
+      "symbol": "ASTRA",
+      "address": "0x58EA4360128b60023f0e63E33529ba7c6f49B814",
+      "final_score": 10.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788586604
     },
     {
       "symbol": "POPCORN",
@@ -1479,167 +1639,119 @@
       "final_score": 10.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570048
+      "ts": 1788587300
     },
     {
-      "symbol": "MO",
-      "address": "0xDc87320710042Bfe18d85741B61Bc2c2487e7048",
-      "final_score": 10.44,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569921
-    },
-    {
-      "symbol": "STABLECAT",
-      "address": "0x781Ce303f75fa2f1d83fFDBCAA2220153554179f",
-      "final_score": 10.43,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569961
-    },
-    {
-      "symbol": "LONGBOW",
-      "address": "0x587Be69569AE1f1647264D06717A85B106CC1E18",
-      "final_score": 10.38,
+      "symbol": "DUH",
+      "address": "0x806103BFbF5D3DCA1A15D62A5e3D3eDa823aA4E2",
+      "final_score": 10.35,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569715
+      "ts": 1788587063
     },
     {
-      "symbol": "LAPTOP",
-      "address": "0x64412f58a8488e2302c99f603085E83F9FA09C18",
-      "final_score": 9.97,
+      "symbol": "CATFISH",
+      "address": "0x5fC50af22065727ca4aafd32f4908cf53b400CE8",
+      "final_score": 10.32,
       "recommended": 0,
       "flags": "one_sided_buy_pressure,implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569816
+      "ts": 1788587014
     },
     {
-      "symbol": "SNORP",
-      "address": "0xf479aa1d0e5c415184ddfa30b684537dfd0eb721",
-      "final_score": 9.96,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570036
-    },
-    {
-      "symbol": "ZARDOZ",
-      "address": "0x9e272897DcBc3992096d98702AC202D899456be1",
-      "final_score": 9.14,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570042
-    },
-    {
-      "symbol": "NIGGA",
-      "address": "0x938dD92943663d869C40A96900C1EB807A79c8Ca",
-      "final_score": 9.13,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity",
-      "ts": 1788569936
-    },
-    {
-      "symbol": "ASTRA",
-      "address": "0x58EA4360128b60023f0e63E33529ba7c6f49B814",
-      "final_score": 9.12,
+      "symbol": "ORGA",
+      "address": "0xAeb3eCeca97D662AA8F63d427370554aB56a56e3",
+      "final_score": 10.02,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569735
+      "ts": 1788586206
     },
     {
-      "symbol": "CIRCLEJERK",
-      "address": "0x5614587115C01fA7123861C52c80831ef5DBDbDb",
-      "final_score": 9.09,
+      "symbol": "MEH",
+      "address": "0x36B6711Be94Aa5dCD7DdD528D14DBE33043659B0",
+      "final_score": 9.58,
       "recommended": 0,
-      "flags": "",
-      "ts": 1788569934
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587354
+    },
+    {
+      "symbol": "MIAO",
+      "address": "0xF139f7f7f9C99cbE9cD96D4fcfa6a8f23390Dafc",
+      "final_score": 9.22,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587048
+    },
+    {
+      "symbol": "GROK",
+      "address": "0x573Edd7b96E0cC6ee90AE525E64e69ab8AF71E18",
+      "final_score": 8.95,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587225
+    },
+    {
+      "symbol": "AMC",
+      "address": "0x64eE81557B0A4fd8aC2Ef80b1030C0E5F43f1501",
+      "final_score": 8.68,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586888
+    },
+    {
+      "symbol": "adum",
+      "address": "0x5e857cb15616B907db0999940EF76A2Ce6061E18",
+      "final_score": 8.41,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788586912
+    },
+    {
+      "symbol": "DROPSHIPOOR",
+      "address": "0x1ae9d9dd973cf5b4c02e756e32e01db3ca3cb596",
+      "final_score": 8.03,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587324
     },
     {
       "symbol": "RA",
       "address": "0x2805De16D80C918B04e3eA0ad708ac8Ad45d1C01",
-      "final_score": 8.76,
+      "final_score": 7.98,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569696
+      "ts": 1788586503
     },
     {
-      "symbol": "ALPACA",
-      "address": "0xad9d2833277dcb4da7491595ee6f0770fcf2c546",
-      "final_score": 8.23,
+      "symbol": "SNORP",
+      "address": "0xf479aa1d0e5c415184ddfa30b684537dfd0eb721",
+      "final_score": 7.52,
       "recommended": 0,
       "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788569963
+      "ts": 1788587275
     },
     {
-      "symbol": null,
-      "address": "0x1ae9d9dd973cf5b4c02e756e32e01db3ca3cb596",
-      "final_score": 7.63,
+      "symbol": "PRLX",
+      "address": "0xb0119a052a184cf4dfb5c7808705a7fb0860d56a",
+      "final_score": 7.51,
       "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570060
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587311
     },
     {
-      "symbol": "HARD",
-      "address": "0xBa471F0248bCa5D3e5184dEB8007f4223298b278",
-      "final_score": 7.18,
+      "symbol": "ZARDOZ",
+      "address": "0x9e272897DcBc3992096d98702AC202D899456be1",
+      "final_score": 6.78,
       "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569778
-    },
-    {
-      "symbol": null,
-      "address": "0xd44083be7a596ac38989d766ab0425895165e857",
-      "final_score": 7.17,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569977
-    },
-    {
-      "symbol": null,
-      "address": "0xab649b2cff6fc9a263072e8773c95d3d816363fe",
-      "final_score": 6.75,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569979
+      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
+      "ts": 1788587284
     },
     {
       "symbol": null,
       "address": "0x7a00542943fdabab95c82b9fa93c9699227c9319",
-      "final_score": 6.71,
+      "final_score": 6.66,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570001
-    },
-    {
-      "symbol": null,
-      "address": "0x482772406b277CFA45169d8B78B5b870331b5DC2",
-      "final_score": 6.68,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570055
-    },
-    {
-      "symbol": null,
-      "address": "0x2b4f29d4696ac5010ae29fed2770096082dfff5b",
-      "final_score": 6.57,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788570068
-    },
-    {
-      "symbol": "CLICK",
-      "address": "0xD4d8BD15864DF1c70779C355B3ede78e915264AE",
-      "final_score": 6.54,
-      "recommended": 0,
-      "flags": "implausible_volume_to_liquidity,high_top10_concentration",
-      "ts": 1788570020
-    },
-    {
-      "symbol": "LU",
-      "address": "0xd212EC0Ea53b60bb8FA786a61FdbDDD406c6e00C",
-      "final_score": 6.53,
-      "recommended": 0,
-      "flags": "high_top10_concentration",
-      "ts": 1788569763
+      "ts": 1788587220
     },
     {
       "symbol": "NOTTINGHOOD",
@@ -1647,23 +1759,47 @@
       "final_score": 6.52,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569811
+      "ts": 1788586814
     },
     {
       "symbol": null,
-      "address": "0x006ab13edc08e4d21885fd01c490d8c682cbccf0",
+      "address": "0x7b25a084290df6efe5a612ee7154331cc106d72d",
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569959
+      "ts": 1788587023
     },
     {
       "symbol": null,
-      "address": "0xd689c16c22ddd8a5251b1351cccac6fc74d67fcd",
+      "address": "0x6afc1f1d7cc7383cb9ec8845fe8f5786994980ee",
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788569973
+      "ts": 1788587033
+    },
+    {
+      "symbol": "PENNY",
+      "address": "0x4124277673E3ecaaF4AaDc5C6169cf1D7812d647",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "implausible_volume_to_liquidity",
+      "ts": 1788587183
+    },
+    {
+      "symbol": null,
+      "address": "0xd44083be7a596ac38989d766ab0425895165e857",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587184
+    },
+    {
+      "symbol": null,
+      "address": "0xab649b2cff6fc9a263072e8773c95d3d816363fe",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "",
+      "ts": 1788587185
     },
     {
       "symbol": null,
@@ -1671,7 +1807,7 @@
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570005
+      "ts": 1788587230
     },
     {
       "symbol": null,
@@ -1679,7 +1815,7 @@
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570038
+      "ts": 1788587276
     },
     {
       "symbol": null,
@@ -1687,7 +1823,7 @@
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570040
+      "ts": 1788587282
     },
     {
       "symbol": null,
@@ -1695,7 +1831,47 @@
       "final_score": 6.5,
       "recommended": 0,
       "flags": "high_top10_concentration",
-      "ts": 1788570050
+      "ts": 1788587306
+    },
+    {
+      "symbol": null,
+      "address": "0x482772406b277CFA45169d8B78B5b870331b5DC2",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587313
+    },
+    {
+      "symbol": null,
+      "address": "0x2b4f29d4696ac5010ae29fed2770096082dfff5b",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587336
+    },
+    {
+      "symbol": null,
+      "address": "0xf9fc31aea95455930bd86ed51088ac10bf31e92f",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587408
+    },
+    {
+      "symbol": null,
+      "address": "0x0529d5dc1b52f936b3cab14012f51a7ad0007a3a",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587411
+    },
+    {
+      "symbol": null,
+      "address": "0x6bd6d8c91c865edc5cda8a2da49b330a84cb2b1c",
+      "final_score": 6.5,
+      "recommended": 0,
+      "flags": "high_top10_concentration",
+      "ts": 1788587414
     }
   ]
 }
