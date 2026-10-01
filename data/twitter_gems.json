@@ -1,5 +1,30 @@
 {
-  "last_updated": 1790802592,
+  "last_updated": 1790816378,
   "market_cap_ceiling": 500000,
-  "coins": []
+  "coins": [
+    {
+      "symbol": "dotswarm",
+      "address": "0xfE1F33Eb8D9556ABa5228e3256b26C1b4A35216e",
+      "market_cap_usd": 167144,
+      "price_usd": "0.0001782",
+      "liquidity_usd": 40526.82,
+      "volume_24h_usd": 736625.35,
+      "twitter_mentions": 1,
+      "twitter_distinct_authors": 1,
+      "twitter_engagement": 1,
+      "dexscreener_url": "https://dexscreener.com/robinhood/0xda94f7aa43470701f0aed50c32e23b2b41c155dc88eeeb83df4971527557163f"
+    },
+    {
+      "symbol": "ANYR",
+      "address": "0xa4dDF89A40A35264E9D7F896a1ef01C59b1e977a",
+      "market_cap_usd": 156489,
+      "price_usd": "0.0001613",
+      "liquidity_usd": 38536.34,
+      "volume_24h_usd": 146216.5,
+      "twitter_mentions": 1,
+      "twitter_distinct_authors": 1,
+      "twitter_engagement": 0,
+      "dexscreener_url": "https://dexscreener.com/robinhood/0x5237546c0d6d1101ee3a9d2ae9d8a1e9d7c804f861d2d0eda7648e66da2d51f6"
+    }
+  ]
 }
