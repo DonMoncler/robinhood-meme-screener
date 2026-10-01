@@ -1,30 +1,42 @@
 {
-  "last_updated": 1790866764,
+  "last_updated": 1790885651,
   "market_cap_ceiling": 500000,
   "coins": [
     {
-      "symbol": "SMRT",
-      "address": "0xC446a0305C5bFfF181810278d8EB3Eac7a94D8d5",
-      "market_cap_usd": 73027,
-      "price_usd": "0.00007302",
-      "liquidity_usd": 62182.87,
-      "volume_24h_usd": 83677.61,
+      "symbol": "PEPE",
+      "address": "0x9B09c435BC5DA088722bE47E97989fB1e3Ed4eB9",
+      "market_cap_usd": 30637,
+      "price_usd": "0.00003063",
+      "liquidity_usd": 25928.85,
+      "volume_24h_usd": 77.22,
       "twitter_mentions": 1,
       "twitter_distinct_authors": 1,
-      "twitter_engagement": 0,
-      "dexscreener_url": "https://dexscreener.com/robinhood/0x171e0ea135b885c2d39e081f2a0adb1c17aa00d106ac66c370e1da1763529aa3"
+      "twitter_engagement": 4,
+      "dexscreener_url": "https://dexscreener.com/robinhood/0x113cd50b1a416e34e649dce89a333cc09066b817c7a6f7a8f29abe9ba7f9a801"
     },
     {
-      "symbol": "LIEGE",
-      "address": "0xB7D2cFd278fe6637d8D682437d07bfBddb8cf51c",
-      "market_cap_usd": 63828,
-      "price_usd": "0.000006382",
-      "liquidity_usd": 41444.02,
-      "volume_24h_usd": 43185.22,
+      "symbol": "FUEL",
+      "address": "0x6547911E5b8F3CfA9e6BCa37dDDe3009e83fAa2D",
+      "market_cap_usd": 57077,
+      "price_usd": "0.00007200",
+      "liquidity_usd": 25823.05,
+      "volume_24h_usd": 9689.51,
       "twitter_mentions": 1,
       "twitter_distinct_authors": 1,
       "twitter_engagement": 0,
-      "dexscreener_url": "https://dexscreener.com/robinhood/0xedc851cfec4d812cb59535dd36ff4c7a7649042cfa17d2adf64ce6b83f80d83f"
+      "dexscreener_url": "https://dexscreener.com/robinhood/0x0595d2d57e62669ce766e5f057362583ee741f492de09a7158261df24799de07"
+    },
+    {
+      "symbol": "SPIRITUAL",
+      "address": "0x5290F94620390f5eA9D002B54590cf43f68e31c2",
+      "market_cap_usd": 48587,
+      "price_usd": "0.000004858",
+      "liquidity_usd": 36098.35,
+      "volume_24h_usd": 20000.3,
+      "twitter_mentions": 1,
+      "twitter_distinct_authors": 1,
+      "twitter_engagement": 0,
+      "dexscreener_url": "https://dexscreener.com/robinhood/0x2c39c05c3f116be7f7d6b0c28e0b7d1a88ffc9e49679ca62be2233bd9aa7a9f2"
     }
   ]
 }
