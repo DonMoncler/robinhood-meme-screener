@@ -1,5 +1,18 @@
 {
-  "last_updated": 1793521998,
+  "last_updated": 1793547616,
   "market_cap_ceiling": 500000,
-  "coins": []
+  "coins": [
+    {
+      "symbol": "MOTES",
+      "address": "0xFe230fa7077d75bDd330Abb8CcD83382E8607777",
+      "market_cap_usd": 3896,
+      "price_usd": "0.000003895",
+      "liquidity_usd": 8625.35,
+      "volume_24h_usd": 0,
+      "twitter_mentions": 1,
+      "twitter_distinct_authors": 1,
+      "twitter_engagement": 7,
+      "dexscreener_url": "https://dexscreener.com/robinhood/0x493c145576ffb68804efb6293c4f659e39b5a3d0"
+    }
+  ]
 }
