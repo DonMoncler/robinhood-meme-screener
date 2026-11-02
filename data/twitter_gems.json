@@ -1,18 +1,18 @@
 {
-  "last_updated": 1793563359,
+  "last_updated": 1793578029,
   "market_cap_ceiling": 500000,
   "coins": [
     {
-      "symbol": "MUMU",
-      "address": "0x8eC17C059f250A5c19566C3fC56EE13A343dD283",
-      "market_cap_usd": 68389,
-      "price_usd": "0.00006951",
-      "liquidity_usd": 17143.58,
-      "volume_24h_usd": 269.99,
+      "symbol": "saluteface",
+      "address": "0xDfBc59f5875B85e93DCAc6fEbe5061f80376B55F",
+      "market_cap_usd": 128621,
+      "price_usd": "0.00002296",
+      "liquidity_usd": 218216.27,
+      "volume_24h_usd": 16576.84,
       "twitter_mentions": 1,
       "twitter_distinct_authors": 1,
       "twitter_engagement": 0,
-      "dexscreener_url": "https://dexscreener.com/robinhood/0x5d25149b5710f4df0a485f075668e1649c4bb2f9"
+      "dexscreener_url": "https://dexscreener.com/robinhood/0xaf8f3886178437edaf45fe4966d659c9240e28c3"
     }
   ]
 }
